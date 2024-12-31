@@ -1,0 +1,157 @@
+---
+import '../styles/global.css'
+import '@fontsource/barlow/300.css'
+import '@fontsource/barlow/700.css';
+import legislationImage from '../images/disclosure-checker/dc-legislation.png';
+import dcRules from '../images/disclosure-checker/dc-rules.png';
+import flowWhiteboard from '../images/disclosure-checker/dc-user-flow-board.png';
+import overlappingCalculations from '../images/disclosure-checker/dc-overlapping-calculations.png';
+import multiplesFlow from '../images/disclosure-checker/dc-user-flow-multiples.png';
+import dcMap from '../images/disclosure-checker/dc-mvp-map-youth.png';
+import convictionType from '../images/disclosure-checker/dc-conviction-type.png';
+import startDate from '../images/disclosure-checker/dc-start-date.png';
+import resultTop from '../images/disclosure-checker/dc-multi-result-top.png';
+import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.png';
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Simon Castillo</title>
+	</head>
+	<body>
+        <main>
+            <div class="back-wrapper">
+                <a href="javascript:history.go(-1)" class="back-link">Back</a>
+            </div>
+            <div class="case-study-hero">
+                <h1 class="primary-color heading-l">Disclosure Checker</h1>
+                <ul class="inline-list aligned-center">
+                    <li>Ministry of Justice</li>
+                    <li>My role: Interaction Designer on the user centred policy design team</li>
+                </ul>
+            </div>
+            <section class="centred-partial-width">
+                <div class="quick-summary">
+                    <h2 class="heading-s primary-color section-heading">Quick summary</h2>
+
+                    <p>The challenge here was to create a digital tool to help people understand when they should tell others about their cautions or criminal convictions.
+                    </p>
+
+                    <p>I was on this project from designing the MVP through to public beta. Immediate feedback praised its usability and clarity. The tool provided a more reliable source of truth and saved time for organisations who work with past offenders, by letting them deprecate their equivalent services.
+                    </p>
+
+                    <p>
+                        <a href="https://www.gov.uk/tell-employer-or-college-about-criminal-record/check-your-conviction-caution" target="_blank">View on GOV.UK↗</a>
+                    </p>
+                </div>			
+			</section>
+            <section class="centred-partial-width">
+                <h2 class="heading-s primary-color section-heading">How this project started</h2>
+                <p>Over 11 million people in the UK have a criminal record. To help people move on with normal life after their caution or conviction, they are not legally required to disclose it when applying for things like jobs or insurance after a certain length of time.
+                </p>
+                <p>
+                Discovery research found that all of the guidance available on this is difficult to understand, resulting in unnecessary barriers to rehabilitation. The team hypothesised that an online 'calculator' by the MoJ could help solve that problem.
+                </p>
+            </section>
+            <div class="two-column img-section">
+                <figure class="img-container">
+                    <img src={legislationImage.src} alt="Front page of the rehabilitation of offenders act 1974." class="border-radius-s">
+                    <figcaption class="body-xs">The rehabilitation of offenders act 1974.</figcaption>
+                </figure>
+                <figure class="img-container">
+                    <img src={dcRules.src} alt="Spreadsheet of different rules for calculating dates." class="border-radius-s">
+                    <figcaption class="body-xs">I worked with stakeholders across government to turn legislation into programmable rules.</figcaption>
+                </figure>
+            </div>
+            <section class="centred-partial-width">
+                <h2 class="heading-s primary-color section-heading">Gaining alignment across government</h2>
+                <p>The main task seemed simple: translate legislation into programmable rules for calculating disclosure dates for different types of caution and conviction.
+                </p>
+                <p>
+                We quickly found that the rules were not so straightforward. So over a series of meetings, the product manager and I worked with legal teams across departments to define the law - and all of its nuances and exceptions - as clearly as possible.
+                </p>
+                <!-- <p>
+                    I translated this into a flow of questions for end users that captured the information needed for calculations.
+                </p> -->
+            </section>
+            <div class="two-column img-section">
+                <figure class="img-container">
+                    <img src={flowWhiteboard.src} alt="A user flow diagram drawn on a whiteboard." class="border-radius-s">
+                    <figcaption class="body-xs">Leading collaborative workshops on the MVP user flows.</figcaption>
+                </figure>
+                <figure class="img-container">
+                    <img src={overlappingCalculations.src} alt="Spreadsheet showing examples of conviction combinations." class="border-radius-s">
+                    <figcaption class="body-xs">Visualising complex rules to build the developers' understanding. This example describes cases where the user has multiple convictions.</figcaption>
+                </figure>
+            </div>
+            <div class="img-section">
+                <figure class="img-container">
+                    <img src={multiplesFlow.src} alt="A user flow diagram of the digital tool." class="border-radius-s">
+                    <figcaption class="body-xs">A later user flow diagram. The blue areas show how the MVP would need to change to support multiple convictions.</figcaption>
+                </figure>
+            </div>
+            <section class="centred-partial-width">
+                <h2 class="heading-s primary-color section-heading">Addressing user needs</h2>
+                <p>While understanding the law, I also built our understanding of users to make sure we were meeting their needs. I coded prototypes which we tested with youth offender management teams and adults with past convictions. We also asked generally about their experiences for more context.
+                </p>
+                <p>These interviews uncovered more user needs beyond the project's scope, which led to wider improvements on the GOV.UK content.</p>
+            </section>
+            <div class="img-section">
+                <figure class="img-container">
+                    <img src={dcMap.src} alt="A diagram showing what happens when a young person commits an offence, through to completing their sentence." class="border-radius-s">
+                    <figcaption class="body-xs">An early service map for the MVP, which focused on youth offences.</figcaption>
+                </figure>
+            </div>
+            <section class="centred-partial-width">
+                <h2 class="heading-s primary-color section-heading">From MVP to public beta</h2>
+                <p>The disclosure checker is currently <a href="https://www.gov.uk/tell-employer-or-college-about-criminal-record/check-your-conviction-caution" target="_blank">live on GOV.UK↗</a>. I left the project shortly after the public release, however initial feedback was consistently positive. Past offenders and charities who work with them praised the tool's usability, clarity and reliability. Below are some example screens from the tool.
+                </p>
+               <p>
+                </p>
+            </section>
+            <div class="two-column img-section">
+                <figure class="img-container">
+                    <img src={convictionType.src} alt="A screen on GOV.UK, asking the user what type of conviction they received." class="border-radius-s">
+                    <figcaption class="body-xs">An example of one of the question screens, where the user selects the type of conviction they received. This branches into multiple further questions depending on their choices.</figcaption>
+                </figure>
+                <figure class="img-container">
+                    <img src={startDate.src} alt="A screen on GOV.UK, asking the user when their sentence started." class="border-radius-s">
+                    <figcaption class="body-xs">Entering start dates with guidance on accuracy.</figcaption>
+                </figure>
+            </div>
+            <div class="two-column img-section">
+                <figure class="img-container">
+                    <img src={resultTop.src} alt="A screen showing the user's calculated results." class="border-radius-s">
+                    <figcaption class="body-xs">A results page for a user with multiple convictions.</figcaption>
+                </figure>
+                <figure class="img-container">
+                    <img src={resultBottom.src} alt="A screen showing supporting content explaing how to use your results." class="border-radius-s">
+                    <figcaption class="body-xs">Further content on how to use results.</figcaption>
+                </figure>
+            </div>
+            <section class="centred-partial-width quick-summary">
+                <h2 class="heading-s primary-color section-heading">View more of my work</h2>
+                <ul>
+                    <li><a href="#">Selected work at Accurx</a></li>
+                    <li>Case study: <a href="#">finding rehabilitative programmes for past offenders</a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="aligned-center footer">
+			<!-- <h2 class="heading-s primary-color section-heading">Contact me</h2> -->
+			<p class="body-l">Contact me through:
+			</p>
+			<ul class="inline-list">
+				<li><a href="https://www.linkedin.com/in/castillosimon/" target="_blank">LinkedIn</a></li>
+				<li><a href="mailto:simcast8@gmail.com" target="_blank">Email</a></li>
+			</ul>
+		</footer>
+
+    </body>
+</html>

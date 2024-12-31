@@ -1,5 +1,8 @@
 ---
-
+import '../styles/global.css'
+import '@fontsource/barlow/300.css'
+import '@fontsource/barlow/700.css';
+import profilePic from '../images/sc-bw.jpeg';
 ---
 
 <html lang="en">
@@ -8,9 +11,90 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Simon Castillo</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<div class="hero">
+				<div class="staggered-heading">
+					<h1 class="secondary-color heading-l">Simon Castillo</h1>
+					<h2 class="primary-color heading-l">Digital Product Designer</h2>
+				</div>
+				<div class="centred-partial-width">
+					<!-- <p class="aligned-center body-l">I design effective, user-friendly apps, digital services and websites.</p> -->
+				
+					<ul class="inline-list aligned-center">
+						<li>Based in London</li>
+						<li>8 years of experience</li>
+						<li>Open to new opportunities</li>
+					</ul>
+				</div>
+			</div>
+			<section class="centred-partial-width">
+				<h2 class="heading-s primary-color section-heading">A bit about me</h2>
+				<img src={profilePic.src} alt="Profile picture of Simon." class="inset-image">
+				<p class="body-l">I specialise in UI and interaction design, with well-rounded knowledge of UX methods, accessibility, visual design and front-end development.
+				</p>
+				<p class="body-l">In the past 8 years, I've worked in a fast-paced, growing start-up as well as the public sector. I'm very comfortable joining multi-disciplinary teams and collaborating to deliver high-quality features. I'm also strongly interested in design systems.</p>
+				<p class="body-l">Before design, I worked in digital marketing for over 3 years.</p>
+				<p class="body-l">Outside of work, my main hobby is hip-hop and house dance. I'm deeply passionate but not very good.</p>
+			</section>
+			<section class="padding-bottom-zero">
+				<h2 class="heading-s primary-color section-heading">Selected work and experience</h2>
+
+				<div class="two-column border-bottom">
+					<div>
+						<h3 class="heading-m">
+							<span class="number">1</span><span>Accurx</span>
+						</h3>
+						<p class="body-l">Series B funded scale-up. Healthcare communication platform used by 98% of GP practices and 68% of NHS Trusts.</p>
+						<a href="/accurx">View case study</a>
+					</div>
+					<div></div>
+				</div>
+
+				<div class="two-column border-bottom">
+					<div>
+						<h3 class="heading-m">
+							<span class="number">2</span><span>Ministry of Justice</span>
+						</h3>
+						<p class="body-l">UK Government department</p>
+						<h4 class="heading-s primary-color">Key projects</h4>
+						<ul>
+							<li>Understanding when to disclose your criminal record: <a href="/disclosure-checker">view case study</a></li>
+							<li>
+								Finding rehabilitative programmes for past offenders: <a href=# target="_blank">view case study</a></li>
+							<li>Internal app for officers to manage rule-breaking in prison</li>
+						</ul>
+					</div>
+					<div></div>
+				</div>
+
+				<div class="two-column padding-bottom-four">
+					<div>
+						<h3 class="heading-m">
+							<span class="number">3</span><span>Home Office</span>
+						</h3>
+						<p class="body-l">UK Government department</p>
+						<h4 class="heading-s primary-color">Key projects</h4>
+						<ul>
+							<li>Viewing and proving your immigration status</li>
+							<li>Viewing and proving your right to work in the UK</li>
+							<li>Internal intelligence systems</li>
+						</ul>
+					</div>
+					<div></div>
+				</div>
+			</section>
+		</main>
+		<footer class="aligned-center footer">
+			<!-- <h2 class="heading-s primary-color section-heading">Contact me</h2> -->
+			<p class="body-l">Contact me through:
+			</p>
+			<ul class="inline-list">
+				<li><a href="https://www.linkedin.com/in/castillosimon/" target="_blank">LinkedIn</a></li>
+				<li><a href="mailto:simcast8@gmail.com" target="_blank">Email</a></li>
+			</ul>
+		</footer>
 	</body>
 </html>
