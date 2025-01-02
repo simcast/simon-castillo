@@ -2,17 +2,13 @@
 import '../styles/global.css'
 import '@fontsource/barlow/300.css'
 import '@fontsource/barlow/700.css';
-import legislationImage from '../images/disclosure-checker/dc-legislation.png';
-import dcRules from '../images/disclosure-checker/dc-rules.png';
-import flowWhiteboard from '../images/disclosure-checker/dc-user-flow-board.png';
-import overlappingCalculations from '../images/disclosure-checker/dc-overlapping-calculations.png';
-import multiplesFlow from '../images/disclosure-checker/dc-user-flow-multiples.png';
-import dcMap from '../images/disclosure-checker/dc-mvp-map-youth.png';
-import convictionType from '../images/disclosure-checker/dc-conviction-type.png';
-import startDate from '../images/disclosure-checker/dc-start-date.png';
-import resultTop from '../images/disclosure-checker/dc-multi-result-top.png';
-import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.png';
-
+import settingStructure from '../images/accurx/ax-setting-structure.png';
+import creationCrit from '../images/accurx/ax-workspace-crit.png';
+import questionnaire from '../images/accurx/ax-questionnaire-2.png';
+import onboardingFlow from '../images/accurx/ax-onboarding-flow.png';
+import desktopSwitcher from '../images/accurx/ax-desktop-switcher.png';
+import modalStyles from '../images/accurx/ax-modal-styles.png';
+import accountSecurity from '../images/accurx/ax-account-security.png';
 ---
 
 <html lang="en">
@@ -26,7 +22,7 @@ import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.pn
 	<body>
         <main>
             <div class="back-wrapper">
-                <a href="javascript:history.go(-1)" class="back-link">Back</a>
+                <a href="javascript:history.go(-1)" class="back-link">← Back</a>
             </div>
             <div class="case-study-hero">
                 <h1 class="primary-color heading-l">Collaborative workspaces</h1>
@@ -39,8 +35,8 @@ import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.pn
                 <div class="quick-summary">
                     <h2 class="heading-s primary-color section-heading">Quick summary</h2>
 
-                    <p>In Accurx, workspaces are where healthcare professionals communicate and collaborate with each other on patient care. My team was responsible for launching this key functionality.</p>
-                    <p>I brought clarity to the product vision and designed the key pieces needed for workspaces to function. I also worked on the practical aspects of the launch, to minimise disruption and maximise uptake.</p>
+                    <p>In Accurx, workspaces are where healthcare professionals communicate with each other about patient care. My team was responsible for launching this key functionality.</p>
+                    <p>I brought clarity to the product vision and, in collaboration with multiple teams, designed all of the UI pieces needed to make it a reality. I also worked on the practical aspects of the launch to minimise disruption and maximise uptake.</p>
                     
                     <p>
                         <a href="https://www.accurx.com/" target="_blank">View the Accurx website↗</a>
@@ -48,84 +44,57 @@ import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.pn
                 </div>			
 			</section>
             <section class="centred-partial-width">
-                <h2 class="heading-m primary-color section-heading">Clarifying goals</h2>
-                <p>When I first joined, a common question around the business was: ‘What exactly is a workspace?’. This was going to be a fundamental part of Accurx's offering. So to ensure we were all moving towards the same goal, I worked with stakeholders to answer that question and build a clearer picture to share across teams.
+                <h2 class="heading-m primary-color section-heading">Clarifying the big picture</h2>
+                <p>When I first joined, a common question around the business was: ‘What exactly is a workspace?’. This was going to be a fundamental part of Accurx's offering, so to ensure we were all moving towards the same goal, I worked with stakeholders to build a clearer picture to share across teams.
                 </p>
             </section>
-            <div class="two-column img-section">
+            <div class="img-section">
                 <figure class="img-container">
-                    <img src={legislationImage.src} alt="Front page of the rehabilitation of offenders act 1974." class="border-radius-s">
-                    <figcaption class="body-xs">The rehabilitation of offenders act 1974.</figcaption>
-                </figure>
-                <figure class="img-container">
-                    <img src={dcRules.src} alt="Spreadsheet of different rules for calculating dates." class="border-radius-s">
-                    <figcaption class="body-xs">I worked with stakeholders across government to turn legislation into programmable rules.</figcaption>
-                </figure>
-            </div>
-            <section class="centred-partial-width">
-                <h2 class="heading-s primary-color section-heading">Gaining alignment across government</h2>
-                <p>The main task seemed simple: translate legislation into programmable rules for calculating disclosure dates for different types of caution and conviction.
-                </p>
-                <p>
-                We quickly found that the rules were not so straightforward. So over a series of meetings, the product manager and I worked with legal teams across departments to define the law - and all of its nuances and exceptions - as clearly as possible.
-                </p>
-                <!-- <p>
-                    I translated this into a flow of questions for end users that captured the information needed for calculations.
-                </p> -->
-            </section>
-            <div class="two-column img-section">
-                <figure class="img-container">
-                    <img src={flowWhiteboard.src} alt="A user flow diagram drawn on a whiteboard." class="border-radius-s">
-                    <figcaption class="body-xs">Leading collaborative workshops on the MVP user flows.</figcaption>
-                </figure>
-                <figure class="img-container">
-                    <img src={overlappingCalculations.src} alt="Spreadsheet showing examples of conviction combinations." class="border-radius-s">
-                    <figcaption class="body-xs">Visualising complex rules to build the developers' understanding. This example describes cases where the user has multiple convictions.</figcaption>
+                    <img src={settingStructure.src} alt="Screenshot of online whiteboard showing how pharmacies and acute Trusts are structured." class="border-radius-s">
+                    <figcaption class="body-xs caption-partial-width">I led meetings and workshops to understand how different parts of the NHS were expected to use workspaces. The goal was to see how our proposition aligned with their needs, processes and structures.</figcaption>
                 </figure>
             </div>
             <div class="img-section">
                 <figure class="img-container">
-                    <img src={multiplesFlow.src} alt="A user flow diagram of the digital tool." class="border-radius-s">
-                    <figcaption class="body-xs">A later user flow diagram. The blue areas show how the MVP would need to change to support multiple convictions.</figcaption>
+                    <img src={questionnaire.src} alt="Quotes from users saying what they think workspaces would be for." class="border-radius-s">
+                    <figcaption class="body-xs caption-partial-width">I teamed up with user researchers to find out how users perceive the workspace concept. This influenced the team's strategic approach as well as the content throughout the designs.</figcaption>
                 </figure>
             </div>
             <section class="centred-partial-width">
-                <h2 class="heading-s primary-color section-heading">Addressing user needs</h2>
-                <p>While understanding the law, I also built our understanding of users to make sure we were meeting their needs. I coded prototypes which we tested with youth offender management teams and adults with past convictions. We also asked generally about their experiences for more context.
-                </p>
-                <p>These interviews uncovered more user needs beyond the project's scope, which led to wider improvements on the GOV.UK content.</p>
+                <h2 class="heading-m primary-color section-heading">Designing the core functionality</h2>
+                <p>After aligning on the vision, I worked on the practical design pieces needed. For example, allowing users to create workspaces, add people to them and self-manage them through different roles and permissions.</p>
+                <p>I continuously worked with user reseachers, developers, product and other stakeholders to add each piece.</p>                    
             </section>
             <div class="img-section">
                 <figure class="img-container">
-                    <img src={dcMap.src} alt="A diagram showing what happens when a young person commits an offence, through to completing their sentence." class="border-radius-s">
-                    <figcaption class="body-xs">An early service map for the MVP, which focused on youth offences.</figcaption>
+                    <img src={onboardingFlow.src} alt="A flow diagram of the Accurx onboarding journey." class="border-radius-s">
+                    <figcaption class="body-xs caption-partial-width">Mapping existing onboarding flows to highlight where changes are needed.</figcaption>
+                </figure>
+            </div>
+            <div class="img-section">
+                <figure class="img-container">
+                    <img src={creationCrit.src} alt="Screenshot of online whiteboard showing a design critique activity." class="border-radius-s">
+                    <figcaption class="body-xs caption-partial-width">I held critiques for each new design piece, gaining feedback across disciplines and teams.</figcaption>
                 </figure>
             </div>
             <section class="centred-partial-width">
-                <h2 class="heading-s primary-color section-heading">From MVP to public beta</h2>
-                <p>The disclosure checker is currently <a href="https://www.gov.uk/tell-employer-or-college-about-criminal-record/check-your-conviction-caution" target="_blank">live on GOV.UK↗</a>. I left the project shortly after the public release, however initial feedback was consistently positive. Past offenders and charities who work with them praised the tool's usability, clarity and reliability. Below are some example screens from the tool.
-                </p>
-               <p>
-                </p>
+                <h2 class="heading-m primary-color section-heading">Raising the bar for design quality</h2>
+                <p>Throughout the project I shared designs and findings with the rest of the design function and across the business. This led to new and improved components in our design system for things like navigation, statuses, active/inactive states and notifications.</p>          
             </section>
             <div class="two-column img-section">
                 <figure class="img-container">
-                    <img src={convictionType.src} alt="A screen on GOV.UK, asking the user what type of conviction they received." class="border-radius-s">
-                    <figcaption class="body-xs">An example of one of the question screens, where the user selects the type of conviction they received. This branches into multiple further questions depending on their choices.</figcaption>
+                    <img src={modalStyles.src} alt="Examples of inconsistent modal styles across the product." class="border-radius-s">
+                    <figcaption class="body-xs">Resolving inconsistencies I found in the product, for example the different versions of modal shown here. I unified them into reusable components for the design system.</figcaption>
                 </figure>
                 <figure class="img-container">
-                    <img src={startDate.src} alt="A screen on GOV.UK, asking the user when their sentence started." class="border-radius-s">
-                    <figcaption class="body-xs">Entering start dates with guidance on accuracy.</figcaption>
+                    <img src={desktopSwitcher.src} alt="The existing workspace switcher menu compared to the updated version I designed." class="border-radius-s">
+                    <figcaption class="body-xs">Bringing simplicity, clarity and improved styling to every component. This is one of the menus for switching between workspaces.</figcaption>
                 </figure>
             </div>
-            <div class="two-column img-section">
+            <div class="img-section">
                 <figure class="img-container">
-                    <img src={resultTop.src} alt="A screen showing the user's calculated results." class="border-radius-s">
-                    <figcaption class="body-xs">A results page for a user with multiple convictions.</figcaption>
-                </figure>
-                <figure class="img-container">
-                    <img src={resultBottom.src} alt="A screen showing supporting content explaing how to use your results." class="border-radius-s">
-                    <figcaption class="body-xs">Further content on how to use results.</figcaption>
+                    <img src={accountSecurity.src} alt="Screenshots of an account security screen. This shows how 2 existing screens were merged into an improved design." class="border-radius-s">
+                    <figcaption class="body-xs caption-partial-width">While the team added workspace functionality to different areas of the product, I took opportunities to improve existing flows.</figcaption>
                 </figure>
             </div>
             <section class="centred-partial-width quick-summary">
