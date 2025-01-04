@@ -24,7 +24,7 @@ a {
 }
 
 footer {
-    padding: 2rem 0 2rem 0;
+    padding: 4rem 0 4rem 0;
     background-color: rgb(0,0,0,0.4);
     margin: 0;
 }
@@ -118,6 +118,13 @@ section {
     }
 }
 
+.home-link {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+    text-decoration: none;
+}
+
 .inline-list {
     /* justify-content: space-between; */
     padding: 0;
@@ -145,10 +152,6 @@ section {
     margin-right: 3rem;
 }
 
-.back-wrapper {
-    padding: 2rem 0 0 0;
-}
-
 .number {
     align-items: center;
     border: 3px solid #0BEBFF;
@@ -173,8 +176,16 @@ section {
     padding-bottom: 4rem;
 }
 
+.padding-bottom-eight {
+    padding-bottom: 8rem;
+}
+
 .padding-bottom-zero {
     padding-bottom: 0;
+}
+
+.padding-left-inset {
+    padding-left: 54px
 }
 
 .quick-summary {
@@ -182,6 +193,7 @@ section {
     padding: 1rem 2rem;
     border: 1px solid #0BEBFF;
     border-radius: 24px;
+    margin-bottom: 8rem;
 }
 
 .secondary-color {
@@ -208,6 +220,10 @@ section {
     h2 {
         margin: 0;
     }
+}
+
+.top-nav {
+    padding: 0;
 }
 
 
