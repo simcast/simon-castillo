@@ -6,6 +6,11 @@ html {
     padding: 0;
   }
 
+blockquote {
+    font-size: 2rem;
+    margin: 0 0 4rem 0;
+}
+
 body {
     font-size: 1.25rem;
     font-weight: 300;
@@ -30,7 +35,11 @@ footer {
 }
 
 figure {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
     margin: 0;
+    width: 100%;
 }
 
 main {
