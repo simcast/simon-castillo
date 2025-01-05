@@ -3,6 +3,9 @@ import '../styles/global.css'
 import '@fontsource/barlow/300.css'
 import '@fontsource/barlow/700.css';
 import profilePic from '../images/sc-bw.jpeg';
+import rwLaptop from '../images/home/rw-laptop.png';
+import axCover from '../images/home/ax-cover.png';
+import adReport from '../images/home/ad-report.png';
 ---
 
 <html lang="en">
@@ -44,20 +47,22 @@ import profilePic from '../images/sc-bw.jpeg';
 				<div class="two-column border-bottom">
 					<div>
 						<h3 class="heading-m">
-							<span class="number">1</span><span>Accurx</span>
+							<span class="number">1</span><span class="primary-color">Accurx</span>
 						</h3>
 						<div class="padding-left-inset">
-							<p class="body-l">Series B funded scale-up. Healthcare communication platform used by 98% of GP practices and 68% of NHS Trusts.</p>
+							<p class="body-l">Healthcare communication platform used by 98% of GP practices and 68% of NHS Trusts.</p>
 							<a href="/simon-castillo/accurx">View case study</a>
 						</div>
 					</div>
-					<div></div>
+					<div class="image-padding">
+						<img src={axCover.src} alt="A screen showing the user's calculated results." class="border-radius-s">
+					</div>
 				</div>
 
 				<div class="two-column border-bottom">
 					<div>
 						<h3 class="heading-m">
-							<span class="number">2</span><span>Ministry of Justice</span>
+							<span class="number">2</span><span class="primary-color">Ministry of Justice</span>
 						</h3>
 						<div class="padding-left-inset">
 							<p class="body-l">UK Government department for the justice system.</p>
@@ -70,13 +75,15 @@ import profilePic from '../images/sc-bw.jpeg';
 							</ul>
 						</div>
 					</div>
-					<div></div>
+					<div class="image-padding">
+						<img src={adReport.src} alt="A screen showing the user's calculated results." class="border-radius-s">
+					</div>
 				</div>
 
 				<div class="two-column padding-bottom-four">
 					<div>
 						<h3 class="heading-m">
-							<span class="number">3</span><span>Home Office</span>
+							<span class="number">3</span><span class="primary-color">Home Office</span>
 						</h3>
 						<div class="padding-left-inset">
 							<p class="body-l">UK Government department for immigration, security, law and order.</p>
@@ -88,7 +95,9 @@ import profilePic from '../images/sc-bw.jpeg';
 							</ul>
 						</div>
 					</div>
-					<div></div>
+					<div class="image-padding">
+						<img src={rwLaptop.src} alt="A screen showing the user's calculated results." class="border-radius-s">
+					</div>
 				</div>
 			</section>
 		</main>

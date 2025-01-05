@@ -119,7 +119,7 @@ section {
 
 .hero {
     align-content: center;
-    height: 95vh;
+    height: 90vh;
     margin: auto;
 
     p {
@@ -150,6 +150,7 @@ section {
     }
 }
 
+
 .img-section {
     padding: 0 0 12rem 0;
 }
@@ -163,7 +164,7 @@ section {
 
 .number {
     align-items: center;
-    border: 3px solid #0BEBFF;
+    border: 1px solid #0BEBFF;
     border-radius: 50%;
     color:#0BEBFF;
     display: inline-flex;
@@ -251,16 +252,28 @@ section {
     }
 }
 
+
 @media only screen and (min-width: 769px) {
+
+    .image-padding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-padding > img {
+        height: auto;
+        width: 65%;
+    }
 
     .two-column {
         display: flex;
-        align-items: center;
+        align-items: top;
         gap: 24px;
     }
 
-    .two-column > div {
-        max-width: 50%;
+    .two-column > * {
+        width: 50%;
     }
 
     .two-column > figure {
