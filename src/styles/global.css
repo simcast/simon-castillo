@@ -45,6 +45,10 @@ figure {
 main {
     margin: 0 3rem;
     padding: 3rem 3rem 0 3rem;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 p {
@@ -150,6 +154,16 @@ section {
     }
 }
 
+.image-padding {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.image-padding > img {
+    height: auto;
+    width: 85%;
+}
 
 .img-section {
     padding: 0 0 12rem 0;
@@ -195,7 +209,7 @@ section {
 }
 
 .padding-left-inset {
-    padding-left: 54px
+    padding-left: 49px
 }
 
 .quick-summary {
@@ -237,53 +251,64 @@ section {
 }
 
 
-@media only screen and (max-width: 768px) {
-    .two-column > div {
-        max-width: 100%;
-    }
-
-    .two-column > img {
-        max-width: 100%;
-    }
-
-    .main {
-        margin: 0 2rem;
-        padding: 0;
-    }
+.two-column {
+    display: flex;
+    align-items: top;
+    gap: 24px;
 }
 
+.two-column > * {
+    width: 50%;
+}
 
-@media only screen and (min-width: 769px) {
+.img-container > img {
+    max-width: 100%;
+}
 
-    .image-padding {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media only screen and (max-width: 991px) {
+
+    main {
+        margin: auto;        
+        padding: auto;
+        width: 80%;
     }
 
+    .centred-partial-width {
+        margin: auto;
+        max-width: 100%;
+    
+    }
+
+    .image-padding {
+        justify-content: center;
+    }
+    
     .image-padding > img {
         height: auto;
-        width: 65%;
+        width: 100%;
+    }
+
+    .padding-left-inset {
+        padding-left: 0;
     }
 
     .two-column {
-        display: flex;
-        align-items: top;
-        gap: 24px;
+        flex-direction: column;
     }
 
     .two-column > * {
-        width: 50%;
+        width: 100%;
     }
+}
+    
 
-    .two-column > figure {
-        max-width: 50%;
-    }
+@media only screen and (min-width: 992px) {
 
-   .img-container > img {
-        max-width: 100%;
-   }
-} 
+main {
+    margin: auto;
+    max-width: 1440px;
+  }
+}
 
 /* .two-column > div {
     max-width: 50%;
