@@ -31,13 +31,14 @@ a {
 footer {
     padding: 4rem 0 4rem 0;
     background-color: rgb(0,0,0,0.4);
-    margin: 0;
+    margin-top: 4rem;
 }
 
 figure {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     margin: 0;
     width: 100%;
 }
@@ -217,7 +218,6 @@ section {
     padding: 1rem 2rem;
     border: 1px solid #0BEBFF;
     border-radius: 24px;
-    margin-bottom: 8rem;
 }
 
 .secondary-color {
@@ -272,6 +272,11 @@ section {
         padding: 1rem;
     }
 
+    footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .caption-partial-width {
         max-width: 100%;
     }
@@ -321,6 +326,10 @@ section {
         padding-left: 0;
     }
 
+    .two-column.project-section {
+        gap: 3rem;
+    }
+
     .two-column {
         flex-direction: column;
         gap: 8rem;
@@ -345,10 +354,15 @@ section {
 
 @media only screen and (min-width: 992px) {
 
-main {
-    margin: auto;
-    max-width: 1440px;
-  }
+    main {
+        margin: auto;
+        max-width: 1440px;
+    }
+
+    .image-padding > img {
+        height: auto;
+        width: 95%;
+    }
 }
 
 /* .two-column > div {
