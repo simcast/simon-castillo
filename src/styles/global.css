@@ -375,7 +375,7 @@ section {
 
     main {
         margin: auto;
-        max-width: 1440px;
+        max-width: 1260px;
     }
 
     .image-padding > img {
@@ -383,7 +383,3 @@ section {
         width: 95%;
     }
 }
-
-/* .two-column > div {
-    max-width: 50%;
-} */
