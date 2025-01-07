@@ -3,6 +3,5 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://simcast.github.io',
-    base: '/simon-castillo',
+    site: 'https://simon-castillo.com',
 });
