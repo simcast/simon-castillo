@@ -8,7 +8,7 @@ html {
 
 blockquote {
     font-size: 2rem;
-    margin: 0 0 4rem 0;
+    margin: 0 0 8rem 0;
 }
 
 body {
@@ -140,7 +140,6 @@ section {
 }
 
 .inline-list {
-    /* justify-content: space-between; */
     padding: 0;
 
     li + li::before {
@@ -277,6 +276,10 @@ section {
         padding-right: 1rem;
     }
 
+    .body-l {
+        font-size: 1.25rem;
+    }    
+
     .caption-partial-width {
         max-width: 100%;
     }
@@ -285,6 +288,21 @@ section {
         font-size: 3rem;
         line-height: 1.2;
     }
+
+    .inline-list {
+        padding: 0;
+    
+        li + li::before {
+            content: "";
+            color: rgb(255,255,255,0.1);
+            padding: 0;
+        }
+    
+        li {
+            display: block;
+            margin: 0 0 0 0;
+        }
+    }    
 
     .inset-image {
         width: 40%;
