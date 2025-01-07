@@ -314,8 +314,13 @@ section {
 
 @media only screen and (max-width: 991px) {
 
+    blockquote {
+        margin: 0 0 4rem 0;
+    }
+
     section {
-        padding-bottom: 8rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
     .centred-partial-width {
         margin: auto;
@@ -324,7 +329,7 @@ section {
     }
 
     .img-section {
-        padding-bottom: 8rem;
+        padding-bottom: 4rem;
     }
 
     .image-padding {
@@ -341,12 +346,12 @@ section {
     }
 
     .two-column.project-section {
-        gap: 3rem;
+        gap: 4rem;
     }
 
     .two-column {
         flex-direction: column;
-        gap: 8rem;
+        gap: 4rem;
     }
 
     .two-column > * {
