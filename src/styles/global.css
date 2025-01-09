@@ -404,7 +404,7 @@ section {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 1.4s;
+    animation-delay: 1.2s;
     opacity: 0.1;
 }
 
@@ -413,7 +413,7 @@ section {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 2.1s;
+    animation-delay: 1.9s;
     opacity: 0.05;
 }
 
