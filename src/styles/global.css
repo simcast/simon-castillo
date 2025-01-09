@@ -1,5 +1,11 @@
+:root {
+    --orange: hsla(34, 100%, 66%);
+    --dark-blue: hsl(222, 54%, 14%);
+    --light-blue: hsl(185, 100%, 52%);
+}
+
 html {
-    background-color: #101B35;
+    background-color: var(--dark-blue);
     color: #fff;
     font-family: 'Barlow', sans-serif;
     margin: 0;
@@ -25,7 +31,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-    color:#FFB451;
+    color:var(--orange);
 }
 
 footer {
@@ -174,9 +180,9 @@ section {
 
 .number {
     align-items: center;
-    border: 1px solid #0BEBFF;
+    border: 1px solid var(--light-blue);
     border-radius: 50%;
-    color:#0BEBFF;
+    color: var(--light-blue);
     display: inline-flex;
     font-size: 1rem;
     font-weight: 300;
@@ -189,7 +195,7 @@ section {
 }
 
 .primary-color {
-    color: #0BEBFF;
+    color: var(--light-blue);
 }
 
 .padding-bottom-four {
@@ -211,12 +217,12 @@ section {
 .quick-summary {
     background-color: rgb(255,255,255,0.03);
     padding: 1rem 2rem;
-    border: 1px solid #0BEBFF;
+    border: 1px solid var(--light-blue);
     border-radius: 24px;
 }
 
 .secondary-color {
-    color: #FFB451;
+    color: var(--orange);
 }
 
 .section-heading {
@@ -382,4 +388,50 @@ section {
         height: auto;
         width: 95%;
     }
+}
+
+.color-animation {
+    animation-name: glow-in;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    opacity: 0.1;
+}
+
+.color-animation-two {
+    animation-name: glow-in-two;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 1.4s;
+    opacity: 0.1;
+}
+
+.color-animation-three {
+    animation-name: glow-in-three;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-delay: 2.1s;
+    opacity: 0.05;
+}
+
+@keyframes glow-in {
+    10% {opacity: 0.3;}
+    50% {opacity: 1;}
+    /* 50% {color: hsla(34, 100%, 90%, 1)}; */
+    100% {color: var(--orange);}
+    100% {opacity: 1}
+}
+
+@keyframes glow-in-two {
+    50% {opacity: 1;}
+    /* 50% {color: hsla(185, 100%, 90%);} */
+    100% {color: var(--light-blue);}
+    100% {opacity: 1;}
+}
+
+@keyframes glow-in-three {
+    100% {opacity: 1;}
 }
