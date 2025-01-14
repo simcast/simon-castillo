@@ -1,7 +1,8 @@
 :root {
-    --orange: hsla(34, 100%, 66%);
+    --border: hsla(0, 0%, 100%, 0.1);
     --dark-blue: hsl(222, 54%, 14%);
     --light-blue: hsl(185, 100%, 52%);
+    --orange: hsl(34, 100%, 66%);
 }
 
 html {
@@ -59,7 +60,7 @@ p {
 }
 
 section {
-    padding: 0 0 12rem 0;
+    padding: 0 0 8rem 0;
 }
 
 
@@ -76,7 +77,7 @@ section {
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgb(255,255,255,0.1);
+    border-bottom: 1px solid var(--border);
     margin: 0 0 2rem 0;
     padding: 0 0 4rem 0;
 }
@@ -226,8 +227,8 @@ section {
 }
 
 .section-heading {
+    border-bottom: 1px solid var(--border);
     text-align: center;
-    border-bottom: 1px solid rgb(255,255,255,0.1);
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
 }
@@ -444,4 +445,11 @@ section {
 
 @keyframes glow-in-three {
     100% {opacity: 1;}
+}
+
+.diagonal-background {
+    background: repeating-linear-gradient(135deg,
+        hsla(0, 0%, 100%, 0.1) 0, hsla(0, 0%, 100%, 0.1) 1px,
+        hsla(0, 0%, 0%, 0) 0, hsla(0, 0%, 0%, 0) 10px 
+    );
 }
