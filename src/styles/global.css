@@ -78,8 +78,8 @@ section {
 
 .border-bottom {
     border-bottom: 1px solid var(--border);
-    margin: 0 0 2rem 0;
-    padding: 0 0 4rem 0;
+    /* margin: 0 0 2rem 0;
+    padding: 0 0 4rem 0; */
 }
 
 .border-radius-s {
@@ -179,6 +179,10 @@ section {
     margin-right: 3rem;
 }
 
+.margin-bottom-zero {
+    margin-bottom: 0;
+}
+
 .no-bullets {
     list-style-type: none;
     padding: 0;
@@ -208,6 +212,10 @@ section {
     color: var(--light-blue);
 }
 
+.padding-top-two {
+    padding-top: 2rem;
+}
+
 .padding-bottom-four {
     padding-bottom: 4rem;
 }
@@ -224,21 +232,23 @@ section {
     padding-left: 49px
 }
 
+.project-section {
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
 .quick-summary {
     background-color: rgb(255,255,255,0.03);
     padding: 1rem 2rem 1rem 2rem;
     border: 1px solid var(--light-blue);
     border-radius: 24px;
-
-    .border-bottom {
-        padding-bottom: 2rem;
-    }
 }
 
 .quick-summary-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 2rem;
 }
 
 .quick-summary-body > *:nth-child(1) {
@@ -247,7 +257,7 @@ section {
 
 .quick-summary-body > *:nth-child(2) {
     display: block;
-    /* padding-top: 0.8rem; */
+    /* padding-top: 2rem; */
     width: 45%;
 
     img {
