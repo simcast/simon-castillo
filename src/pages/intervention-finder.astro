@@ -8,6 +8,8 @@ import home from '../images/intervention-finder/fi-home.png';
 import prisonerSearch from '../images/intervention-finder/fi-prisoner-search.png';
 import results from '../images/intervention-finder/fi-results-cropped.png';
 import programmeDetail from '../images/intervention-finder/fi-programme-detail.png';
+import axCover from '../images/home/ax-cover.png';
+import adReport from '../images/home/ad-report.png';
 
 ---
 
@@ -104,10 +106,25 @@ import programmeDetail from '../images/intervention-finder/fi-programme-detail.p
             </section>
             <section class="centred-partial-width quick-summary">
                 <h2 class="heading-s primary-color section-heading">View more of my work</h2>
-                <ul>
-                    <li>Accurx - <a href="/accurx">collaborative workspaces</a></li>
-                    <li>Ministry of Justice - <a href="/disclosure-checker">when to disclose your criminal record</a></li>
-                </ul>
+                <div class="quick-summary-body border-bottom">
+                    <div>
+                        <h3 class="heading-m primary-color">Accurx</h3>
+                        <ul class="no-bullets">
+                            <li><a href="/accurx">Collaborative workspaces</a></li>                            
+                        </ul>
+                    </div>
+                    <img src={axCover.src} alt="Two Accurx screens overlapping. One is a workspace list page and the other shows an inbox." class="border-radius-s">
+                </div>
+                <div class="quick-summary-body">
+                    <div>
+                        <h3 class="heading-m primary-color">Ministry of Justice</h3>
+                        <ul class="no-bullets">
+                            <li><a href="/disclosure-checker">When to disclose your criminal record</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src={adReport.src} alt="Two Accurx screens overlapping. One is a workspace list page and the other shows an inbox." class="border-radius-s">
+                </div>
             </section>
         </main>
         <footer class="aligned-center footer">

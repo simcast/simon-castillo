@@ -179,6 +179,15 @@ section {
     margin-right: 3rem;
 }
 
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin-bottom: 1rem;
+    }
+}
+
 .number {
     align-items: center;
     border: 1px solid var(--light-blue);
@@ -217,9 +226,34 @@ section {
 
 .quick-summary {
     background-color: rgb(255,255,255,0.03);
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     border: 1px solid var(--light-blue);
     border-radius: 24px;
+
+    .border-bottom {
+        padding-bottom: 2rem;
+    }
+}
+
+.quick-summary-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.quick-summary-body > *:nth-child(1) {
+    width: 50%;
+}
+
+.quick-summary-body > *:nth-child(2) {
+    display: block;
+    /* padding-top: 0.8rem; */
+    width: 45%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .secondary-color {
@@ -227,7 +261,7 @@ section {
 }
 
 .section-heading {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid var(--light-blue);
     text-align: center;
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
@@ -349,6 +383,18 @@ section {
 
     .padding-left-inset {
         padding-left: 0;
+    }
+
+    .quick-summary-body {
+        text-align: center;
+    }
+
+    .quick-summary-body > *:nth-child(1) {
+        width: 100%;
+    }
+    
+    .quick-summary-body > *:nth-child(2) {
+        width: 100%;
     }
 
     .two-column.project-section {

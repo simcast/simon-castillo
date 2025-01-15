@@ -11,6 +11,7 @@ import modalStyles from '../images/accurx/ax-modal-styles.png';
 import accountSecurity from '../images/accurx/ax-account-security.png';
 import workspaceList from '../images/accurx/ax-workspace-list.png';
 import launchingWorkspaces from '../images/accurx/ax-launching-workspaces.png';
+import adReport from '../images/home/ad-report.png';
 ---
 
 <html lang="en">
@@ -122,11 +123,18 @@ import launchingWorkspaces from '../images/accurx/ax-launching-workspaces.png';
             </div>
             <section class="centred-partial-width quick-summary">
                 <h2 class="heading-s primary-color section-heading">View more of my work</h2>
-                <ul>
-                    <li>Ministry of Justice - <a href="/disclosure-checker">when to disclose your criminal record</a></li>
-                    <li>Ministry of Justice – <a href="/intervention-finder">finding rehabilitative programmes for offenders</a>
-                    </li>
-                </ul>
+                <div class="quick-summary-body">
+                    <div>
+                        <h3 class="heading-m primary-color">Ministry of Justice </h3>
+                        <ul class="no-bullets">
+                            <li><a href="/disclosure-checker">When to disclose your criminal record</a></li>
+                            <li><a href="/intervention-finder">Finding rehabilitative programmes for offenders</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src={adReport.src} alt="A screen showing a hearing summary within HMPPS' digital prison services." class="border-radius-s">
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="aligned-center footer">
