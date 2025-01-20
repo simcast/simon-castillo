@@ -241,33 +241,40 @@ section {
 }
 
 .quick-summary {
-    /* background-color: rgb(255,255,255,0.03); */
     background-color: var(--mid-blue);
-    padding: 1rem 2rem 1rem 2rem;
-    /* border: 1px solid var(--light-blue); */
+    padding: 1rem 2rem 2.5rem 2rem;
     border-radius: 24px;
 }
 
-.quick-summary-body {
+.quick-summary > *:last-child {
+    margin-bottom: 0;
+}
+
+.quick-summary-section {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 2rem;
 }
 
-.quick-summary-body > *:nth-child(1) {
+.quick-summary-section > *:nth-child(1) {
     width: 50%;
 }
 
-.quick-summary-body > *:nth-child(2) {
+.quick-summary-section > *:nth-child(2) {
     display: block;
-    /* padding-top: 2rem; */
+    margin-bottom: 0;
     width: 45%;
 
     img {
         width: 100%;
         height: auto;
     }
+}
+
+.quick-summary-section:last-child {
+    padding-bottom: 0;
 }
 
 .secondary-color {
