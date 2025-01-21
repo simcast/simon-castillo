@@ -6,6 +6,16 @@
     --orange: hsl(34, 100%, 66%);
 }
 
+a {
+    transition: color 0.15s linear, background-color 0.15s linear;
+}
+
+a:hover {
+    background-color: var(--orange);
+    color: var(--dark-blue);
+    /* text-decoration: none; */
+}
+
 html {
     background-color: var(--dark-blue);
     color: #fff;
