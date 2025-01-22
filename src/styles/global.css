@@ -4,6 +4,10 @@
     --mid-blue: hsl(222, 54%, 17%);
     --light-blue: hsl(185, 100%, 52%);
     --orange: hsl(34, 100%, 66%);
+    --space-between-sections: 9rem;
+    --space-within-sections: 6rem;
+    --space-between-sections-s: 6rem;
+    --space-within-sections-s: 3rem; 
 }
 
 a {
@@ -50,7 +54,6 @@ a {
 footer {
     padding: 4rem 0 4rem 0;
     background-color: rgb(0,0,0,0.4);
-    margin-top: 4rem;
 }
 
 figure {
@@ -72,7 +75,10 @@ p {
 }
 
 section {
-    padding: 0 0 8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-within-sections);
+    margin-bottom: var(--space-between-sections);
 }
 
 
@@ -118,9 +124,12 @@ section {
 }
 
 .centred-partial-width {
-    margin: auto;
-    max-width: 40rem;
+    margin: 0 auto;
+    max-width: 50%;
+}
 
+.centred-partial-width > *:last-child {
+    margin-bottom: 0;
 }
 
 .heading-l {
@@ -181,9 +190,9 @@ section {
     width: 85%;
 }
 
-.img-section {
-    padding: 0 0 12rem 0;
-}
+/* .img-section {
+    margin-bottom: var(--space-within-sections);
+} */
 
 .inset-image {
     width: 30%;
@@ -243,6 +252,15 @@ section {
 
 .padding-left-inset {
     padding-left: 49px
+}
+
+.project-list {
+    gap: 0;
+}
+
+.project-list > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .project-section {
@@ -390,17 +408,13 @@ section {
     }
 
     section {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        gap: var(--space-within-sections-s);
+        margin-bottom: var(--space-between-sections-s);
     }
     .centred-partial-width {
         margin: auto;
         max-width: 100%;
     
-    }
-
-    .img-section {
-        padding-bottom: 4rem;
     }
 
     .image-padding {
