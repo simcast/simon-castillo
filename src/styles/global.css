@@ -399,6 +399,10 @@ section {
     .quick-summary {
         padding: 1rem;
     }
+
+    .quick-summary > *:last-child {
+        margin-bottom: 1rem;
+    }
 }
 
 @media only screen and (max-width: 991px) {
