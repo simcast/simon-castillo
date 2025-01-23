@@ -148,6 +148,7 @@ section {
 
 .hero {
     align-content: center;
+    background-color: transparent;
     height: 90vh;
     margin: auto;
 
@@ -189,10 +190,6 @@ section {
     height: auto;
     width: 85%;
 }
-
-/* .img-section {
-    margin-bottom: var(--space-within-sections);
-} */
 
 .inset-image {
     width: 30%;
@@ -487,19 +484,19 @@ section {
 .color-animation {
     animation-name: glow-in;
     animation-delay: 0.5s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    opacity: 0.1;
+    opacity: 0;
 }
 
 .color-animation-two {
     animation-name: glow-in-two;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-delay: 1.2s;
-    opacity: 0.1;
+    opacity: 0;
 }
 
 .color-animation-three {
@@ -507,8 +504,8 @@ section {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    animation-delay: 1.9s;
-    opacity: 0.05;
+    animation-delay: 1.8s;
+    opacity: 0;
 }
 
 /* .border-animation {
@@ -523,17 +520,14 @@ section {
 } */
 
 @keyframes glow-in {
-    10% {opacity: 0.3;}
-    50% {opacity: 1;}
-    /* 50% {color: hsla(34, 100%, 90%, 1)}; */
-    100% {color: var(--orange);}
-    100% {opacity: 1}
+    /* 0% {transform: translate(0, 10px)} */
+    /* 50% {transform: translate(0, 0)} */
+    100% {opacity: 1;}
 }
 
 @keyframes glow-in-two {
-    50% {opacity: 1;}
-    /* 50% {color: hsla(185, 100%, 90%);} */
-    100% {color: var(--light-blue);}
+    /* 0% {transform: translate(0, 10px)} */
+    /* 30% {transform: translate(0, 0)} */
     100% {opacity: 1;}
 }
 
@@ -546,4 +540,71 @@ section {
         hsla(0, 0%, 100%, 0.1) 0, hsla(0, 0%, 100%, 0.1) 1px,
         hsla(0, 0%, 0%, 0) 0, hsla(0, 0%, 0%, 0) 10px 
     );
+}
+
+/* Animate when in view. See scripts.js for details. */
+
+.animate {
+    opacity: 0.3;
+}
+img.in-view {
+    animation-name: glow-in;
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+
+/* new hero */
+
+
+.dot-mask {
+    height: 80vh;
+    background: 
+        /* horizontal lines */
+        repeating-linear-gradient(
+            transparent, 
+            transparent 1px, 
+            var(--dark-blue) 1px,
+            var(--dark-blue) 30px
+        ),
+        /* vertical cut-out to create dashed horizontal lines */
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 4px,
+            var(--dark-blue) 4px,
+            var(--dark-blue) 10px
+        ),
+        repeating-linear-gradient(
+        var(--orange), 
+        var(--orange) 50%,
+        var(--light-blue) 50%,
+        var(--light-blue)100%);
+        border-bottom: 1px solid var(--light-blue);    
+    border-top: 1px solid var(--orange);
+}
+
+#sc-name {
+    background-color: var(--dark-blue);
+    padding: 0 1rem;
+    width: fit-content;
+    line-height: 1;
+}
+
+#title {
+    text-align: right;
+    background-color: var(--dark-blue);
+    float: right;
+    padding: 0 1rem;
+    width: fit-content;
+    margin-left: auto;
+    line-height: 1;
+}
+
+.home-headings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
