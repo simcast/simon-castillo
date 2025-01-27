@@ -95,7 +95,7 @@ section {
 }
 
 .border-bottom {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px dashed var(--border);
     /* margin: 0 0 2rem 0;
     padding: 0 0 4rem 0; */
 }
@@ -348,6 +348,8 @@ section {
     max-width: 100%;
 }
 
+/* Media queries */
+
 @media only screen and (max-width: 479px) {
     main {
         margin: auto;        
@@ -486,31 +488,26 @@ section {
     }
 }
 
-.color-animation {
+/* CSS animations */
+
+.animate-glow-in {
     animation-name: glow-in;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     opacity: 0;
 }
 
-.color-animation-two {
-    animation-name: glow-in-two;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+.animation-delay-1 {
+    animation-delay: 0.3s;
+}
+
+.animation-delay-2 {
+    animation-delay: 0.7s;
+}
+
+.animation-delay-3 {
     animation-delay: 1.2s;
-    opacity: 0;
-}
-
-.color-animation-three {
-    animation-name: glow-in-three;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-delay: 1.8s;
-    opacity: 0;
 }
 
 /* .border-animation {
