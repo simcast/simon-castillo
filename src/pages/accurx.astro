@@ -12,6 +12,7 @@ import accountSecurity from '../images/accurx/ax-account-security.png';
 import workspaceList from '../images/accurx/ax-workspace-list.png';
 import launchingWorkspaces from '../images/accurx/ax-launching-workspaces.png';
 import adReport from '../images/home/ad-report.png';
+import peace from '../images/peace-2.svg';
 ---
 
 <html lang="en">
@@ -21,6 +22,7 @@ import adReport from '../images/home/ad-report.png';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Simon Castillo</title>
+        <script src="../scripts/scripts.js"></script>
 	</head>
 	<body>
         <main>
@@ -155,15 +157,19 @@ import adReport from '../images/home/ad-report.png';
                 </div>
             </section>
         </main>
-        <footer class="aligned-center footer">
-			<h2 class="primary-color heading-m">Get in contact
+        <footer class="aligned-center footer">           
+            <h2 class="primary-color heading-m">Get in contact
             </h2>
-			<p>Thanks for stopping by. Feel free to get in touch with any queries.</p>
-			<ul class="inline-list">
-				<li><a href="https://www.linkedin.com/in/castillosimon/" target="_blank">LinkedIn</a></li>
-				<li><a href="mailto:simcast8@gmail.com" target="_blank">Email</a></li>
-			</ul>
-			<!-- <p class="body-xs">Portfolio coded using HTML, CSS, JavaScript and Astro.</p> -->
+            <div class="footer-body">                
+                <div class="footer-text">
+                    <p>Thanks for stopping by. Feel free to get in touch with any queries.</p>
+                    <ul class="inline-list">
+                        <li><a href="https://www.linkedin.com/in/castillosimon/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:simcast8@gmail.com" target="_blank">Email</a></li>
+                    </ul>
+                    <!-- <img src={peace.src} alt="A peace hand emoji." class="border-radius-s animate"> -->
+                </div>
+            </div>
 		</footer>
 
     </body>

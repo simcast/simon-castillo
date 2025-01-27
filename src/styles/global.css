@@ -132,6 +132,36 @@ section {
     margin-bottom: 0;
 }
 
+.footer-body {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 2rem;
+    justify-content: center;
+
+    img {
+        height: 3rem;
+        rotate: -30deg;
+        width:fit-content;
+    }
+}
+
+.footer-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        margin-bottom: 4rem;
+    }
+}
+
 .heading-l {
     font-size: 6rem;
     line-height: 1.2;
@@ -488,6 +518,21 @@ section {
     }
 }
 
+/* Animate when in view. See scripts.js for details. */
+
+.animate {
+    opacity: 0.3;
+}
+
+
+img.in-view {
+    animation: glow-in 0.5s, rotate 0.2s;
+    animation-delay: 0.1s;
+    /* animation-duration: 0.5s; */
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
 /* CSS animations */
 
 .animate-glow-in {
@@ -510,16 +555,6 @@ section {
     animation-delay: 1.1s;
 }
 
-/* .border-animation {
-    animation-fill-mode: forwards;
-    animation: border-color linear;
-    animation-timeline: view();
-  }
-
-@keyframes border-color {
-    50% {border-color: var(--light-blue);}
-    70% {border-color: var(--light-blue);}
-} */
 
 @keyframes glow-in {
     /* 0% {transform: translate(0, 10px)} */
@@ -527,14 +562,8 @@ section {
     100% {opacity: 1;}
 }
 
-@keyframes glow-in-two {
-    /* 0% {transform: translate(0, 10px)} */
-    /* 30% {transform: translate(0, 0)} */
-    100% {opacity: 1;}
-}
-
-@keyframes glow-in-three {
-    100% {opacity: 1;}
+@keyframes rotate {
+    100% {rotate: -12deg;}
 }
 
 .diagonal-background {
@@ -544,18 +573,7 @@ section {
     );
 }
 
-/* Animate when in view. See scripts.js for details. */
 
-.animate {
-    opacity: 0.3;
-}
-img.in-view {
-    animation-name: glow-in;
-    animation-delay: 0.1s;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-}
 
 
 /* new hero */
