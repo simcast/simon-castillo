@@ -1,8 +1,8 @@
 :root {
     --border: hsla(0, 0%, 100%, 0.1);
-    --dark-blue: hsl(222, 47%, 13%);
-    --mid-blue: hsl(222, 47%, 18%);
-    --light-blue: hsl(185, 100%, 52%);
+    --dark-blue: hsl(213, 60%, 12%);
+    --mid-blue: hsl(213, 60%, 16%);
+    --light-blue: hsl(199, 80%, 74%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 9rem;
     --space-within-sections: 6rem;
@@ -53,7 +53,7 @@ a {
 
 footer {
     padding: 4rem 0 4rem 0;
-    background-color: rgb(0,0,0,0.4);
+    background-color: rgb(0,0,0,0.3);
 }
 
 figure {
