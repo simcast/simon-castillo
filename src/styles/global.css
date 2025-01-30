@@ -1,8 +1,8 @@
 :root {
     --border: hsla(0, 0%, 100%, 0.1);
-    --dark-blue: hsl(213, 60%, 12%);
-    --mid-blue: hsl(213, 60%, 16%);
-    --light-blue: hsl(199, 80%, 74%);
+    --dark-blue: hsl(213, 48%, 12%);
+    --mid-blue: hsl(213, 48%, 18%);
+    --light-blue: hsl(199, 94%, 67%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 9rem;
     --space-within-sections: 6rem;
