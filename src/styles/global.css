@@ -70,8 +70,8 @@ ol > li {
 }
 
 main {
-    margin: 0 3rem;
-    padding: 3rem 3rem 0 3rem;
+    margin: 0 2rem;
+    padding: 2rem 2rem 0 2rem;
 }
 
 p {
@@ -509,7 +509,7 @@ section {
 
     main {
         margin: auto;
-        max-width: 1260px;
+        max-width: 1320px;
     }
 
     .caption-partial-width {
