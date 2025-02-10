@@ -65,6 +65,10 @@ figure {
     width: 100%;
 }
 
+ol > li {
+    margin-bottom: 1rem;
+}
+
 main {
     margin: 0 3rem;
     padding: 3rem 3rem 0 3rem;
