@@ -191,6 +191,11 @@ section {
     }
 }
 
+.hero-img-container {
+    min-height: 50vh;
+    /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
+}
+
 .home-link {
     font-size: 1.25rem;
     font-weight: 700;
