@@ -1,8 +1,9 @@
 :root {
-    --border: hsla(0, 0%, 100%, 0.1);
+    --border: hsl(188, 100%, 20%);
     --dark-blue: hsl(213, 48%, 12%);
     --mid-blue: hsl(213, 48%, 15%);
     --light-blue: hsl(188, 100%, 57%);
+    --line-blue: hsl(188, 100%, 30%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 9rem;
     --space-within-sections: 6rem;
@@ -212,8 +213,7 @@ section {
 
     li + li::before {
         content: "|";
-        color: rgb(255,255,255,0.1); 
-        color: var(--light-blue);
+        color: var(--line-blue);
         padding: 1rem;
     }
 
@@ -351,7 +351,7 @@ section {
 }
 
 .section-heading {
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid var(--line-blue);
     text-align: center;
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
