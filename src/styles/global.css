@@ -85,6 +85,10 @@ section {
     margin-bottom: var(--space-between-sections);
 }
 
+#about-section {
+    margin-bottom: 12rem;
+}
+
 
 .aligned-center {
     text-align: center;
