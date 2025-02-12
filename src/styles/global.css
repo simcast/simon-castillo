@@ -418,6 +418,11 @@ section {
         line-height: 1.2;
     }
 
+    .hero-img-container {
+        min-height: auto;
+        /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
+    }
+
     .inline-list {
         padding: 0;
     
