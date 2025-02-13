@@ -3,7 +3,7 @@
     --dark-blue: hsl(213, 48%, 12%);
     --mid-blue: hsl(213, 48%, 15%);
     --light-blue: hsl(188, 100%, 57%);
-    --line-blue: hsl(188, 100%, 30%);
+    --line-blue: hsl(188, 100%, 20%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 9rem;
     --space-within-sections: 6rem;
@@ -104,7 +104,7 @@ section {
 }
 
 .border-bottom {
-    border-bottom: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--line-blue);
     /* margin: 0 0 2rem 0;
     padding: 0 0 4rem 0; */
 }
@@ -540,7 +540,7 @@ section {
 
 .animate {
     opacity: 0.3;
-    translate: -1rem;
+    rotate: -5deg;
 }
 
 
@@ -582,7 +582,7 @@ img.in-view {
 }
 
 @keyframes slide {
-    100% {translate: 0;}
+    100% {rotate: 0deg;}
 }
 
 .diagonal-background {
