@@ -1,7 +1,7 @@
 :root {
     --border: hsl(188, 100%, 20%);
-    --dark-blue: hsl(213, 48%, 12%);
-    --mid-blue: hsl(213, 48%, 15%);
+    --dark-blue: hsl(213, 48%, 10%);
+    --mid-blue: hsl(213, 48%, 13%);
     --light-blue: hsl(188, 100%, 57%);
     --line-blue: hsl(188, 100%, 20%);
     --orange: hsl(34, 100%, 66%);
@@ -208,6 +208,10 @@ section {
     text-decoration: none;
 }
 
+#home-meta-info {
+    margin-left: 2px;
+}
+
 .inline-list {
     padding: 0;
 
@@ -294,6 +298,16 @@ section {
     padding-left: 49px
 }
 
+.profile-pic {
+    border-radius: 16px;
+    width: 18%;
+}
+
+.profile-pic-container {
+    display: flex;
+    justify-content: right;
+}
+
 .project-list {
     gap: 0;
 }
@@ -353,6 +367,12 @@ section {
 .section-heading {
     border-bottom: 1px solid var(--line-blue);
     text-align: center;
+    padding: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
+}
+
+.section-heading-left {
+    border-bottom: 1px solid var(--line-blue);
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
 }
