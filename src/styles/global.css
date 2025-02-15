@@ -27,6 +27,8 @@ html {
     font-family: 'Barlow', sans-serif;
     margin: 0;
     padding: 0;
+    text-wrap: pretty;
+
   }
 
 blockquote {
@@ -85,6 +87,7 @@ section {
     gap: var(--space-within-sections);
     margin-bottom: var(--space-between-sections);
 }
+
 
 #about-section {
     margin-bottom: 12rem;
@@ -171,6 +174,10 @@ section {
     }
 }
 
+#gap-l {
+    gap: 4rem;
+}
+
 .heading-l {
     font-size: 6rem;
     line-height: 1.2;
@@ -211,6 +218,20 @@ section {
 #home-meta-info {
     margin-left: 2px;
 }
+
+.icon-list {
+    list-style-type: none;
+    padding: 0;
+
+    *:first-child > div {
+        padding-top: 0;
+    }
+}
+
+.icon-list-item {
+    padding: 1rem 0;
+}
+
 
 .inline-list {
     padding: 0;
@@ -367,6 +388,7 @@ section {
 .section-heading {
     border-bottom: 1px solid var(--line-blue);
     text-align: center;
+    text-wrap: balance;
     padding: 0 0 1rem 0;
     margin: 0 0 2rem 0;
 }
