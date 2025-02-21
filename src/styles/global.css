@@ -90,7 +90,18 @@ section {
 
 
 #about-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
     margin-bottom: 12rem;
+}
+
+#about-skill-section {
+    grid-column: 9 / span 3;
+}
+
+.about-text {
+    grid-column: 1 / span 6;
 }
 
 
@@ -174,12 +185,12 @@ section {
     }
 }
 
-#gap-l {
+/* #gap-l {
     gap: 8rem;
-}
+} */
 
 .heading-l {
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 1.2;
 }
 
@@ -194,8 +205,9 @@ section {
 
 .home-hero {
     align-items: center;
-    display: flex;
-    gap: 8rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(12, 1fr);
     height: 90vh;
     margin: auto;
 
@@ -203,6 +215,28 @@ section {
         margin-bottom: 0;
     }
 
+}
+
+.home-hero-text {
+    grid-column: 1 / span 8;
+}
+
+.home-hero-pic {
+    height: auto;
+    max-width: 100%;
+}
+
+.home-hero-pic-container {
+    background: 
+        /* repeating-linear-gradient(135deg, var(--dark-blue), var(--dark-blue) 16px, transparent 17px, transparent 18px), */
+        linear-gradient(135deg, var(--orange), var(--light-blue))
+        ;
+    border-radius: 16px;
+    font-size: 0;
+    grid-column: 9 / span 3;
+    height: fit-content;
+    /* max-width: 18%; */
+    padding: 8px;
 }
 
 #home-name, #home-job-title, #home-meta-info {
@@ -336,24 +370,6 @@ section {
     padding-left: 49px
 }
 
-.profile-pic {
-    height: auto;
-    max-width: 100%;
-}
-
-.profile-pic-container {
-    background: 
-        /* repeating-linear-gradient(135deg, var(--dark-blue), var(--dark-blue) 16px, transparent 17px, transparent 18px), */
-        linear-gradient(135deg, var(--orange), var(--light-blue))
-        ;
-    border-radius: 16px;
-    font-size: 0;
-    height: fit-content;
-    max-width: 20%;
-    padding: 8px;
-}
-
-
 .project-list {
     gap: 0;
 }
@@ -424,9 +440,7 @@ section {
     margin: 0 0 1rem 0;
 }
 
-#skill-section {
-    width: 25%;
-}
+
 
 .staggered-heading {
     margin: 0 0 2rem 0;
@@ -451,7 +465,7 @@ section {
 .two-column {
     display: flex;
     align-items: top;
-    gap: 24px;
+    gap: 8rem;
 }
 
 .two-column > * {
@@ -545,6 +559,19 @@ section {
     #about-section {
         margin-bottom: var(--space-between-sections-s);
     }
+    
+    #about-skill-section {
+        grid-column: 1 / span 12;
+    }
+    
+    .about-text {
+        grid-column: 1 / span 12;
+        margin-bottom: var(--space-between-sections-s);
+
+        p {
+            margin-bottom: 0;
+        }
+    }
 
     .body-l {
         font-size: 1rem;
@@ -561,6 +588,14 @@ section {
         max-height: 80vh;
     }
 
+    .home-hero-text {
+        grid-column: 1 / span 12;
+    }
+    
+    .home-hero-pic-container {
+        display: none;
+    }
+
     .image-padding {
         justify-content: center;
     }
@@ -573,11 +608,6 @@ section {
     .padding-left-inset {
         padding-left: 0;
     }
-
-    .profile-pic-container {
-        display: none;
-    }
-
 
     .quick-summary-section {
         text-align: center;
