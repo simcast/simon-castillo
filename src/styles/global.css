@@ -702,6 +702,14 @@ img.in-view {
     opacity: 0;
 }
 
+.animate-glow-slide {
+    animation-name: glow-in, slide;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
 .animate-gradient-cycle {
     path{
         animation-name: gradient-cycle;
@@ -769,5 +777,6 @@ img.in-view {
 }
 
 @keyframes slide {
-    100% {rotate: 0deg;}
+    0% {transform: translate(0, 1rem)}
+    100% {transform: translate(0)}
 }
