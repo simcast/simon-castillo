@@ -374,6 +374,10 @@ section {
     gap: 0;
 }
 
+.project-list > *:nth-child(2) {
+    padding-top: 1rem;
+}
+
 .project-list > *:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -381,7 +385,7 @@ section {
 
 .project-section {
     margin-bottom: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     /* flex-direction: row-reverse; */
 }
 
