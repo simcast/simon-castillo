@@ -588,16 +588,19 @@ section {
     }
 
     .home-hero {
-        text-align: center;
+        /* text-align: center; */
+        gap: 0;
         max-height: 60vh;
     }
 
     .home-hero-text {
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 7;
     }
     
     .home-hero-pic-container {
-        display: none;
+        border-radius: 12px;
+        grid-column: 9 / span 4;
+        padding: 4px;
     }
 
     .image-padding {
