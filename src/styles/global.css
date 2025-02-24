@@ -88,6 +88,10 @@ section {
     margin-bottom: var(--space-between-sections);
 }
 
+ul {
+    margin-top: 0;
+}
+
 
 #about-section {
     display: grid;
@@ -268,12 +272,15 @@ section {
 }
 
 .icon-list-item {
+    align-items: center;
     display: flex;
     gap: 1rem;
     padding: 1rem 0;
 }
 
+
 .inline-list {
+    margin-top: 1rem;
     padding: 0;
 
     li + li::before {
