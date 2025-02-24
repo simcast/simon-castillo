@@ -469,6 +469,10 @@ section {
 .two-column {
     display: flex;
     align-items: top;
+    gap: 2rem;
+}
+
+.two-column.project-section {
     gap: 8rem;
 }
 
