@@ -13,6 +13,7 @@ import workspaceList from '../images/accurx/ax-workspace-list.png';
 import launchingWorkspaces from '../images/accurx/ax-launching-workspaces.png';
 import adReport from '../images/home/ad-report.png';
 import axHero from '../images/accurx/ax-hero.png';
+import Footer from '../components/footer.astro';
 ---
 
 <html lang="en">
@@ -156,10 +157,10 @@ import axHero from '../images/accurx/ax-hero.png';
                         <div class="quick-summary-section">
                             <div>
                                 <h3 class="heading-m primary-color">Ministry of Justice </h3>
-                                <ul class="no-bullets">
+                                <ol>
                                     <li><a href="/disclosure-checker">When to disclose your criminal record</a></li>
                                     <li><a href="/intervention-finder">Finding rehabilitative programmes for offenders</a></li>
-                                </ul>
+                                </ol>
                             </div>
                             <div>
                                 <img src={adReport.src} alt="A screen showing a hearing summary within HMPPS' digital prison services." class="border-radius-s">
@@ -169,22 +170,7 @@ import axHero from '../images/accurx/ax-hero.png';
                 </div>
             </section>
         </main>
-        <footer class="aligned-center footer">           
-            <h2 class="primary-color heading-m">Get in contact
-            </h2>          
-                <div class="footer-text">
-                    <p>Thanks for stopping by. Feel free to get in touch with any queries.</p>
-                    <ul class="inline-list">
-                        <li><a href="https://www.linkedin.com/in/castillosimon/" target="_blank">LinkedIn</a></li>
-                        <li><a href="mailto:simcast8@gmail.com" target="_blank">Email</a></li>
-                    </ul>
-				<div class="footer-body">      
-					<p class="body-xs">&copy; Simon Castillo 2025. Site hand-coded using HTML, CSS, JavaScript and Astro.</p>
-                    <!-- <img src={peace.src} alt="A peace hand emoji." class="border-radius-s animate"> -->
-					
-                </div>
-            </div>
-		</footer>
+        <Footer />
 
     </body>
 </html>
