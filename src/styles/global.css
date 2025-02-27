@@ -210,8 +210,9 @@ section {
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(12, 1fr);
-    height: 70vh;
+    /* height: 70vh; */
     margin: auto;
+    padding: var(--space-between-sections) 0;
 
     h1, h2 {
         margin-bottom: 0;
@@ -517,6 +518,10 @@ section {
         line-height: 1.2;
     }
 
+    .home-hero {
+        padding: var(--space-between-sections-s) 0;
+    }
+
     .hero-img-container {
         min-height: auto;
         /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
@@ -601,7 +606,8 @@ section {
     .home-hero {
         /* text-align: center; */
         gap: 0;
-        max-height: 60vh;
+        /* max-height: 60vh; */
+        
     }
 
     .home-hero-text {
