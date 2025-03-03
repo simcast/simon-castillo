@@ -26,7 +26,7 @@ import Footer from '../components/footer.astro';
 					<h1 class="secondary-color heading-l animate-glow-in animation-delay-1" id="home-name">Simon Castillo</h1>
 					<h2 class="primary-color heading-l animate-glow-in animation-delay-2" id="home-job-title">Product Designer</h2>
 
-					<ul class="inline-list animate-glow-slide animation-delay-3 body-l" id="home-meta-info">
+					<ul class="body-xs primary-color inline-list animate-glow-slide animation-delay-3 body-l" id="home-meta-info">
 						<li>Based in London</li>
 						<li>8 years of experience</li>
 						<li>Open to new opportunities</li>
@@ -41,56 +41,60 @@ import Footer from '../components/footer.astro';
 				<!-- <div class="two-column" id="gap-l"> -->
 					<div class="about-text">
 						<h2 class="heading-s primary-color section-heading-left">A bit about me</h2>
-						<p class="body-l">I’m a Digital Product Designer dedicated to function, accessibility, and thoughtful craftsmanship. Over the past eight years, I’ve designed responsive web products for a healthcare communication scale-up and two UK government departments, helping essential services to operate more effectively. With every project, my aim is to make the web a little more human-centred.</p>
-						<p class="body-l"></p>
+						<p class="body-l">I’m a Digital Product Designer dedicated to function, accessibility, and thoughtful craftsmanship. Over the past eight years, I’ve designed web products for a healthcare communication scale-up and two UK government departments, helping essential services to run more effectively. With each project, I aim to make the web a little more useful and human-centred.</p>
+						<!-- <p class="body-l">I’m a Digital Product Designer dedicated to functional, accessible, and thoughtfully crafted design. With every project, I aim to make the web a little more useful and human-centred.</p> -->
 					</div>
 					<div id="about-skill-section">
 						<h2 class="heading-s primary-color section-heading-left">What I can help with</h2>
 							<ul class="mini-list">
 								<li>
-									<div class="icon-list-item border-bottom">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon animate-gradient-cycle">
-											<path d="M10 16.95H6.21C2.84 16.95 2 16.11 2 12.74V6.74003C2 3.37003 2.84 2.53003 6.21 2.53003H16.74C20.11 2.53003 20.95 3.37003 20.95 6.74003" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M10 21.47V16.95" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path opacity="0.4" d="M2 12.95H10" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M6.73999 21.47H9.99999" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path d="M22 12.8V18.51C22 20.88 21.41 21.47 19.04 21.47H15.49C13.12 21.47 12.53 20.88 12.53 18.51V12.8C12.53 10.43 13.12 9.84003 15.49 9.84003H19.04C21.41 9.84003 22 10.43 22 12.8Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-											<path opacity="0.4" d="M17.2445 18.25H17.2535" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-											</svg>
-											
+									<div class="icon-list-item">
+										<div class="icon-container">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+												<path d="M10 16.95H6.21C2.84 16.95 2 16.11 2 12.74V6.74003C2 3.37003 2.84 2.53003 6.21 2.53003H16.74C20.11 2.53003 20.95 3.37003 20.95 6.74003" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M10 21.47V16.95" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path opacity="0.4" d="M2 12.95H10" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M6.73999 21.47H9.99999" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M22 12.8V18.51C22 20.88 21.41 21.47 19.04 21.47H15.49C13.12 21.47 12.53 20.88 12.53 18.51V12.8C12.53 10.43 13.12 9.84003 15.49 9.84003H19.04C21.41 9.84003 22 10.43 22 12.8Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path opacity="0.4" d="M17.2445 18.25H17.2535" stroke="#292D32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</div>
 										UX, UI & web design
 									</div>
 								</li>
 								<li>
-									<div class="icon-list-item border-bottom">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon animate-gradient-cycle animation-delay-icon-2">
+									<div class="icon-list-item">
+										<div class="icon-container">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
 											<path opacity="0.4" d="M20 6.95V17.05C19.84 17.02 19.67 17 19.5 17C18.12 17 17 18.12 17 19.5C17 19.67 17.02 19.84 17.05 20H6.95C6.98 19.84 7 19.67 7 19.5C7 18.12 5.88 17 4.5 17C4.33 17 4.16 17.02 4 17.05V6.95C4.16 6.98 4.33 7 4.5 7C5.88 7 7 5.88 7 4.5C7 4.33 6.98 4.16 6.95 4H17.05C17.02 4.16 17 4.33 17 4.5C17 5.88 18.12 7 19.5 7C19.67 7 19.84 6.98 20 6.95Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path d="M7 4.5C7 5.88 5.88 7 4.5 7C4.33 7 4.16 6.98 4 6.95C2.86 6.72 2 5.71 2 4.5C2 3.12 3.12 2 4.5 2C5.71 2 6.72 2.86 6.95 4C6.98 4.16 7 4.33 7 4.5Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path d="M22 4.5C22 5.71 21.14 6.72 20 6.95C19.84 6.98 19.67 7 19.5 7C18.12 7 17 5.88 17 4.5C17 4.33 17.02 4.16 17.05 4C17.28 2.86 18.29 2 19.5 2C20.88 2 22 3.12 22 4.5Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path d="M7 19.5C7 19.67 6.98 19.84 6.95 20C6.72 21.14 5.71 22 4.5 22C3.12 22 2 20.88 2 19.5C2 18.29 2.86 17.28 4 17.05C4.16 17.02 4.33 17 4.5 17C5.88 17 7 18.12 7 19.5Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path d="M22 19.5C22 20.88 20.88 22 19.5 22C18.29 22 17.28 21.14 17.05 20C17.02 19.84 17 19.67 17 19.5C17 18.12 18.12 17 19.5 17C19.67 17 19.84 17.02 20 17.05C21.14 17.28 22 18.29 22 19.5Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
-											
+										</div>	
 										Prototyping
 									</div>
 								</li>
 								<li>
-									<div class="icon-list-item border-bottom">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon animate-gradient-cycle animation-delay-icon-3">
+									<div class="icon-list-item">
+										<div class="icon-container">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
 											<path d="M22 12V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path opacity="0.4" d="M20.96 17.84L19.33 18.39C18.88 18.54 18.52 18.89 18.37 19.35L17.82 20.98C17.35 22.39 15.37 22.36 14.93 20.95L13.08 15C12.72 13.82 13.81 12.72 14.98 13.09L20.94 14.94C22.34 15.38 22.36 17.37 20.96 17.84Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											</svg>
-											
+										</div>
 										Usability testing</div>
 								</li>
 								<li>
 									<div class="icon-list-item">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon animate-gradient-cycle animation-delay-icon-4">
+										<div class="icon-container">
+											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
 											<path d="M13.01 2.91995L18.91 5.53995C20.61 6.28995 20.61 7.52995 18.91 8.27995L13.01 10.8999C12.34 11.1999 11.24 11.1999 10.57 10.8999L4.67002 8.27995C2.97002 7.52995 2.97002 6.28995 4.67002 5.53995L10.57 2.91995C11.24 2.61995 12.34 2.61995 13.01 2.91995Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path opacity="0.4" d="M3 11C3 11.84 3.63 12.81 4.4 13.15L11.19 16.17C11.71 16.4 12.3 16.4 12.81 16.17L19.6 13.15C20.37 12.81 21 11.84 21 11" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 											<path opacity="0.4" d="M3 16C3 16.93 3.55 17.77 4.4 18.15L11.19 21.17C11.71 21.4 12.3 21.4 12.81 21.17L19.6 18.15C20.45 17.77 21 16.93 21 16" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 										</svg>
-											
+										</div>
 										Developing design systems
 									</div>
 								</li>
@@ -102,64 +106,66 @@ import Footer from '../components/footer.astro';
 			<section class="project-list">
 				<h2 class="heading-s primary-color section-heading-left margin-bottom-zero">Selected work and experience</h2>
 
-				<div class="two-column project-section border-bottom">
-					<div>
+				<div class="project-section border-bottom">
+					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">1</span> -->
 							<span class="primary-color">Accurx</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
-							<p class="body-l">Launching critical functionality at a series B funded healthcare scale-up.</p>
-							<a href="/accurx">View case study</a>
+							<p>Launching collaborative workspaces for healthcare professionals.</p>
+							<p>
+								<a href="/accurx">View case study</a>
+							</p>
 						</div>
 					</div>
-					<div class="image-padding">
+					<div class="project-section-img">
 						<img src={axCover.src} alt="Two Accurx screens overlapping. One is a workspace list page and the other shows an inbox." class="border-radius-s">
 					</div>
 				</div>
 
-				<div class="two-column project-section border-bottom">
-					<div>
+				<div class="project-section border-bottom">
+					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">2</span> -->
 							<span class="primary-color">Ministry of Justice</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
-							<p class="body-l">Helping past offenders to rehabilitate and officers to be more efficient.</p>
+							<!-- <p class="body-l">Helping past offenders to rehabilitate and officers to be more efficient.</p> -->
 							<h4 class="heading-s primary-color">Key projects</h4>
-							<ul>
-								<li>When to disclose your criminal record: <a href="/disclosure-checker">view case study</a></li>
+							<ol class="">
+								<li>Criminal record disclosure checker.<br/><a href="/disclosure-checker">View case study</a></li>
 								<li>
-									Finding rehabilitative programmes: <a href="/intervention-finder">view case study</a></li>
-								<li>Internal app for officers to manage rule-breaking in prison</li>
-							</ul>
+									Finding rehabilitative programmes.<br/><a href="/intervention-finder">View case study</a></li>
+								<li>Internal app for officers to manage rule-breaking in prison.</li>
+							</ol>
 						</div>
 					</div>
-					<div class="image-padding">
+					<div class="project-section-img">
 						<img src={adReport.src} alt="A screen showing a hearing summary within HMPPS' digital prison services." class="border-radius-s ">
 					</div>
 				</div>
 
-				<div class="two-column project-section">
-					<div>
+				<div class="project-section">
+					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">3</span> -->
 							<span class="primary-color">Home Office</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
-							<p class="body-l">Helping people to understand their status and rights in the UK.</p>
+							<!-- <p class="body-l">Helping people to understand their status and rights in the UK.</p> -->
 							<h4 class="heading-s primary-color">Key projects</h4>
-							<ul>
-								<li>Viewing and sharing your immigration status</li>
-								<li>Proving your right to work in the UK</li>
-								<li>Internal intelligence systems</li>
-							</ul>
+							<ol class="body">
+								<li>Viewing and sharing your immigration status.</li>
+								<li>Proving your right to work in the UK.</li>
+								<li>Internal intelligence systems.</li>
+							</ol>
 						</div>
 					</div>
-					<div class="image-padding">
+					<div class="project-section-img">
 						<img src={rwLaptop.src} alt="A laptop screen showing a page about right to work on GOV.UK" class="border-radius-s ">
 					</div>
 				</div>
