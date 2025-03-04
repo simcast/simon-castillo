@@ -399,11 +399,11 @@ section {
 }
 
 .project-section-text {
-    width: 50%;
+    width: 40%;
 }
 
 .project-section-img {
-    max-width: 75%;
+    max-width: 60%;
     padding-left: 2rem;
 
     img {
