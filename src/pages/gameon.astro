@@ -1,0 +1,177 @@
+---
+import '../styles/global.css'
+import '@fontsource/barlow/300.css'
+import '@fontsource/barlow/700.css';
+import settingStructure from '../images/accurx/ax-setting-structure.png';
+import creationCrit from '../images/accurx/ax-workspace-crit.png';
+import questionnaire from '../images/accurx/ax-questionnaire-2.png';
+import onboardingFlow from '../images/accurx/ax-onboarding-flow.png';
+import desktopSwitcher from '../images/accurx/ax-desktop-switcher.png';
+import modalStyles from '../images/accurx/ax-modal-styles.png';
+import accountSecurity from '../images/accurx/ax-account-security.png';
+import workspaceList from '../images/accurx/ax-workspace-list.png';
+import launchingWorkspaces from '../images/accurx/ax-launching-workspaces.png';
+import mojCover from '../images/home/moj-cover.jpg';
+import axHero from '../images/accurx/ax-hero.jpg';
+import Footer from '../components/footer.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Simon Castillo</title>
+        <script src="../scripts/scripts.js"></script>
+        <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
+	</head>
+	<body>
+        <main>
+            <header>
+                <nav class="top-nav">
+                    <a href="/" class="home-link">Simon Castillo</a>
+                </nav>
+            </header>
+            
+            <div class="case-study-hero animate-glow-in animation-delay-1">
+                <h1 class="primary-color heading-l ">GameOn Active</h1>
+                <ul class="inline-list aligned-center">
+                    <!-- <li>Accurx &nbsp;<a href="https://www.accurx.com/" target="_blank">(view site ↗)</a></li> -->
+                    <!-- <li>Web and desktop app</li> -->
+                    <!-- <li>My role: Product Designer</li> -->
+                </ul>
+            </div>
+            <section>
+                <div class="lottie-container">
+
+                    <lottie-player src="https://cdn.lottielab.com/l/CvNsPu53STkM2f.json" loop autoplay></lottie-player>
+
+
+                </div>
+            </section>
+            <section>
+                <div class="centred-partial-width">
+                    <div class="quick-summary">
+                        <h2 class="heading-s primary-color section-heading">Quick summary</h2>
+
+                        <p>In Accurx, workspaces are where NHS healthcare professionals communicate with each other about patient care. My team was responsible for launching this functionality and moving all users into the correct workspaces.</p>
+                        <h3 class="heading-s primary-color">My key outcomes:</h3>
+                        <ol>
+                            <li>Clarified the product vision across teams.</li>
+                            <li>Designed mission-critical flows for workspace creation, onboarding, access management and configuration. Consistently delivered to tight timelines.</li>
+                            <li>Added new and improved design system components.</li>
+                            <li>Successfully transferred key cohorts into workspaces, with over 90% completion rate for new flows.</li>
+                        </ol>
+                            <!-- <a href="https://www.accurx.com/" target="_blank">View the Accurx website↗</a> -->
+                        </p>
+                    </div>		
+                </div>	
+			</section>
+            <section>
+                <div class="centred-partial-width">
+                    <h2 class="heading-m primary-color section-heading heading-m">Clarifying the product and business vision</h2>
+                    <p>"What exactly is a workspace?" was the key question being asked around the business when I joined the team. As it was going to be a fundamental part of Accurx's offering, I started by building a clearer picture.
+                    </p>
+                </div>
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={settingStructure.src} alt="Screenshot of online whiteboard showing how pharmacies and acute Trusts are structured." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">I led meetings with key stakeholders to understand how different parts of the healthcare system were expected to use workspaces. The goal was to ensure our proposition aligned with their needs, processes and structures.</figcaption>
+                    </figure>
+                </div>
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={questionnaire.src} alt="Quotes from users saying what they think workspaces would be for." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">I teamed up with user researchers to find out how users perceive the workspace concept. This influenced the team's strategic approach as well as the content throughout the designs.</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <div class="centred-partial-width">
+                    <h2 class="heading-m primary-color section-heading heading-m">Collaborating at every step</h2>
+                    <p>Once aligned on the vision, I worked on the practical design pieces needed. For example, allowing users to create workspaces, add people to them and self-manage them through different roles and permissions.</p>
+                    <p>Over several months, I continuously worked with user reseachers, developers, product and other stakeholders to add each piece.</p>
+                </div>
+                <!-- <div class="img-section">
+                    <figure class="img-container">
+                        <img src={onboardingFlow.src} alt="A flow diagram of the Accurx onboarding journey." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">Mapping existing onboarding flows to highlight where changes are needed.</figcaption>
+                    </figure>
+                </div>                     -->
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={creationCrit.src} alt="Screenshot of online whiteboard showing a design critique activity." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">I held critiques for each new design piece, gaining feedback across disciplines and teams.</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <div class="centred-partial-width">
+                    <h2 class="heading-m primary-color section-heading heading-m">Raising the bar for design quality</h2>
+                    <p>Throughout the project I shared designs and findings across the business and wider design team, which led to improved design system components for navigation, statuses, active/inactive states and notifications.</p>
+                </div>
+                <div class="img-section">
+                    <!-- <figure class="img-container">
+                        <img src={modalStyles.src} alt="Examples of inconsistent modal styles across the product." class="border-radius-s">
+                        <figcaption class="body-xs">Resolving inconsistencies I found in the product, for example the different versions of modal shown here. I unified them into reusable components for the design system.</figcaption>
+                    </figure> -->
+                    <figure class="img-container">
+                        <img src={desktopSwitcher.src} alt="The existing workspace switcher menu compared to the updated version I designed." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">Bringing clarity and improved styling to every component. This is a redesign of one of the menus for switching organisations in the desktop app version of Accurx, repurposing it for the new workspace model.</figcaption>
+                    </figure>
+                </div>
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={accountSecurity.src} alt="Screenshots of an account security screen. This shows how 2 existing screens were merged into an improved design." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">While we added workspace functionality to different areas of the product, I took opportunities to improve existing flows wherever possible.</figcaption>
+                    </figure>
+                </div>
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={workspaceList.src} alt="Screenshots of an early and later version of the workspace list screen." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">A screen for joining and creating workspaces, which went through many iterations. As healthcare workers are under constant time pressure, I pushed for a simpler, more focused experience.</figcaption>
+                    </figure>
+                </div>          
+            </section>
+            
+            <section>
+                <div class="centred-partial-width">
+                    <h2 class="heading-m primary-color section-heading">Strategically introducing new features to users</h2>
+                    <p>The way a feature is rolled out is just as important as the feature itself. I collaborated on content and onboarding flows that help users move to the new way of working in Accurx.
+                    </p>
+                    <p>
+                        As a result, we were able to successfully transfer key cohorts into workspaces and built a playbook of tactics to transfer all users.
+                    </p>
+                </div>          
+                <div class="img-section">
+                    <figure class="img-container">
+                        <img src={launchingWorkspaces.src} alt="Screenshots of designs that introduce workspace functionality. An example of an email and different modal components." class="border-radius-s">
+                        <figcaption class="body-xs caption-partial-width">Multiple flows and tactics were used to achieve the end goal of moving all users into their correct workspaces.</figcaption>
+                    </figure>
+                </div>
+            </section>            
+            <section>
+                <div class="centred-partial-width">
+                    <div class="quick-summary">
+                        <h2 class="heading-s primary-color section-heading">View more of my work</h2>
+                        <div class="quick-summary-section">
+                            <div>
+                                <h3 class="heading-m primary-color">Ministry of Justice </h3>
+                                <ol>
+                                    <li><a href="/disclosure-checker">When to disclose your criminal record</a></li>
+                                    <li><a href="/intervention-finder">Finding rehabilitative programmes for offenders</a></li>
+                                </ol>
+                            </div>
+                            <div>
+                                <img src={mojCover.src} alt="A screen showing a hearing summary within HMPPS' digital prison services." class="border-radius-s">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <Footer />
+
+    </body>
+</html>

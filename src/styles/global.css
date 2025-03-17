@@ -312,6 +312,21 @@ section {
     margin-right: 2rem;
 }
 
+.lottie-container {
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    background-color: #FF972F;
+    height: 50vh;
+    justify-content: center;
+    width: 25%;
+}
+
+lottie-player {
+    height: 100%;
+    width: 100%;
+}
+
 .margin-bottom-zero {
     margin-bottom: 0;
 }
