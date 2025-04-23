@@ -3,7 +3,7 @@
     --dark-blue: hsl(213, 48%, 9%);
     --mid-blue: hsl(213, 48%, 14%);
     --light-blue: hsl(188, 90%, 48%);
-    --line-blue: hsl(188, 100%, 20%);
+    --line-blue: hsl(188, 100%, 10%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 6rem;
     --space-within-sections: 6rem;
@@ -119,7 +119,7 @@ section {
 }
 
 .border-bottom {
-    border-bottom: 1px dashed var(--line-blue);
+    border-bottom: 1px solid var(--line-blue);
     /* margin: 0 0 2rem 0;
     padding: 0 0 4rem 0; */
 }
