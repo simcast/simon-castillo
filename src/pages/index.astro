@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import '@fontsource/barlow/300.css'
 import '@fontsource/barlow/700.css';
+import { Image } from 'astro:assets';
 import profilePic from '../images/sc-color.jpeg';
 import rwLaptop from '../images/home/rw-laptop.jpg';
 import axCover from '../images/home/ax-cover.jpg';
@@ -123,7 +124,8 @@ import Footer from '../components/footer.astro';
 						</div>
 					</div>
 					<div class="project-section-img">
-						<img src={axCover.src} alt="Multiple user interface components from workspaces in Accurx." class="border-radius-s">
+						<Image src={axCover} alt="Multiple user interface components from workspaces in Accurx." class="border-radius-s" />
+						<!-- <img src={axCover.src} alt="Multiple user interface components from workspaces in Accurx." class="border-radius-s"> -->
 					</div>
 				</div>
 
