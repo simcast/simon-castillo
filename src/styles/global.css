@@ -3,7 +3,7 @@
     --dark-blue: hsl(213, 48%, 9%);
     --mid-blue: hsl(213, 48%, 14%);
     --light-blue: hsl(188, 90%, 48%);
-    --line-blue: hsl(188, 100%, 15%);
+    --line-blue: hsl(188, 100%, 12%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 6rem;
     --space-within-sections: 6rem;
@@ -208,7 +208,8 @@ section {
 .home-hero {
     align-items: center;
     display: grid;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 0;
     grid-template-columns: repeat(12, 1fr);
     /* height: 70vh; */
     margin: auto;
@@ -220,8 +221,16 @@ section {
 
 }
 
+
+
 .home-hero-text {
     grid-column: 1 / span 8;
+    grid-row: 1 / span 1;
+}
+
+#home-hero-labels {
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 1;
 }
 
 .home-hero-pic {
@@ -237,6 +246,7 @@ section {
     border-radius: 16px;
     font-size: 0;
     grid-column: 9 / span 3;
+    grid-row: 1 / span 2;
     height: fit-content;
     /* max-width: 18%; */
     padding: 8px;
@@ -244,10 +254,6 @@ section {
 
 #home-name, #home-job-title, #home-meta-info {
     grid-column: 1 / span 8;
-}
-
-#home-job-title {
-    margin-bottom: 2rem;
 }
 
 .hero-img-container {
@@ -321,6 +327,7 @@ section {
 
 .label-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 1rem;
     padding-left: 0;
@@ -650,6 +657,8 @@ lottie-player {
     .home-hero {
         /* text-align: center; */
         gap: 0;
+        grid-template-rows: repeat(2, auto);
+        grid-auto-rows: max-content;
         /* max-height: 60vh; */
         
     }
@@ -657,10 +666,17 @@ lottie-player {
     .home-hero-text {
         grid-column: 1 / span 7;
     }
+
+    #home-hero-labels {
+        grid-column: 1 / span 12;
+        grid-row: 2 / span 1;
+        margin-top: 2rem;
+    }
     
     .home-hero-pic-container {
         border-radius: 12px;
         grid-column: 9 / span 4;
+        grid-row: 1 / span 1;
         padding: 4px;
     }
 
