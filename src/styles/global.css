@@ -3,7 +3,7 @@
     --dark-blue: hsl(213, 48%, 9%);
     --mid-blue: hsl(213, 48%, 14%);
     --light-blue: hsl(188, 90%, 48%);
-    --line-blue: hsl(188, 100%, 10%);
+    --line-blue: hsl(188, 100%, 15%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 6rem;
     --space-within-sections: 6rem;
@@ -246,6 +246,10 @@ section {
     grid-column: 1 / span 8;
 }
 
+#home-job-title {
+    margin-bottom: 2rem;
+}
+
 .hero-img-container {
     min-height: 50vh;
     /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
@@ -258,9 +262,6 @@ section {
     text-decoration: none;
 }
 
-#home-meta-info {
-    margin-left: 2px;
-}
 
 .icon-container{
     align-items: center;
@@ -310,6 +311,19 @@ section {
     border-radius: 8px;
     float: left;
     margin-right: 2rem;
+}
+
+.label {
+    background-color: var(--mid-blue);
+    border-radius: 24px;
+    padding: 4px 16px 6px 16px;
+}
+
+.label-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding-left: 0;
 }
 
 .lottie-container {
