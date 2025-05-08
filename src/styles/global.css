@@ -240,17 +240,13 @@ section {
 }
 
 .home-hero-pic-container {
-    background: 
-        /* repeating-linear-gradient(135deg, var(--dark-blue), var(--dark-blue) 16px, transparent 17px, transparent 18px), */
-        linear-gradient(135deg, var(--orange), var(--light-blue))
-        ;
+
     border-radius: 16px;
     font-size: 0;
     grid-column: 9 / span 3;
     grid-row: 1 / span 2;
     height: fit-content;
-    /* max-width: 18%; */
-    padding: 8px;
+
 }
 
 #home-name, #home-job-title, #home-meta-info {
