@@ -24,7 +24,7 @@ a:hover {
 html {
     background-color: var(--dark-blue);
     color: #fff;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Plus Jakarta Sans Variable', sans-serif;
     margin: 0;
     padding: 0;
     text-wrap: pretty;
@@ -40,14 +40,15 @@ blockquote {
 body {
     font-size: 1.2rem;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
   }
 
 h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans Variable', sans-serif;
     font-weight: 700;
-    margin: 0 0 1rem 0; 
+    margin: 0 0 1.5rem 0; 
 }
 
 a {
