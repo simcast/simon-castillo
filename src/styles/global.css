@@ -202,7 +202,7 @@ section {
 
 .heading-s {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.04rem;
     margin: 2rem 0 0 0;
 }
@@ -320,6 +320,8 @@ section {
 .label {
     background-color: var(--mid-blue);
     border-radius: 24px;
+    letter-spacing: 0.04rem;
+    font-weight:500;
     padding: 4px 16px 6px 16px;
 }
 
