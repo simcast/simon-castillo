@@ -120,7 +120,7 @@ section {
 }
 
 .border-bottom {
-    border-bottom: 1px solid var(--line-blue);
+    border-bottom: 1px dashed var(--line-blue);
     /* margin: 0 0 2rem 0;
     padding: 0 0 4rem 0; */
 }
@@ -487,7 +487,7 @@ lottie-player {
 }
 
 .section-heading {
-    border-bottom: 1px solid var(--line-blue);
+    border-bottom: 1px dashed var(--line-blue);
     text-align: center;
     text-wrap: balance;
     padding: 0 0 1rem 0;
@@ -495,7 +495,7 @@ lottie-player {
 }
 
 .section-heading-left {
-    border-bottom: 1px solid var(--line-blue);
+    border-bottom: 1px dashed var(--line-blue);
     padding: 0 0 1rem 0;
     margin: 0 0 1rem 0;
 }
@@ -668,7 +668,6 @@ lottie-player {
     #home-hero-labels {
         grid-column: 1 / span 12;
         grid-row: 2 / span 1;
-        margin-top: 2rem;
     }
     
     .home-hero-pic-container {
