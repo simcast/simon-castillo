@@ -564,6 +564,11 @@ lottie-player {
         max-width: 100%;
     }
 
+    .heading-m {
+        font-size: 1.8rem;
+        line-height: 1.35;
+    }
+
     .heading-l {
         font-size: 3rem;
         line-height: 1.2;
@@ -576,6 +581,14 @@ lottie-player {
     .hero-img-container {
         min-height: auto;
         /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+
+    .label-list {
+        column-gap: 0.5rem;
     }
 
     .inline-list {
