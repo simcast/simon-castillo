@@ -3,11 +3,11 @@
     --dark-blue: hsl(213, 48%, 9%);
     --mid-blue: hsl(213, 48%, 14%);
     --light-blue: hsl(188, 90%, 48%);
-    --line-blue: hsl(188, 100%, 12%);
+    --line-blue: hsl(188, 100%, 14%);
     --orange: hsl(34, 100%, 66%);
     --space-between-sections: 6rem;
     --space-within-sections: 6rem;
-    --space-between-sections-s: 3rem;
+    --space-between-sections-s: 4rem;
     --space-within-sections-s: 2rem; 
 }
 
@@ -197,7 +197,7 @@ section {
 }
 
 .heading-m {
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .heading-s {
@@ -498,7 +498,7 @@ lottie-player {
 
 .section-heading-left {
     border-bottom: 1px dashed var(--line-blue);
-    padding: 0 0 1rem 0;
+    padding: 0 0 0.5rem 0;
     margin: 0 0 1rem 0;
 }
 
@@ -565,8 +565,8 @@ lottie-player {
     }
 
     .heading-m {
-        font-size: 1.8rem;
-        line-height: 1.35;
+        font-size: 1.5rem;
+        line-height: 1.4;
     }
 
     .heading-l {
