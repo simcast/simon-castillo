@@ -5,8 +5,8 @@
     --light-blue: hsl(188, 90%, 48%);
     --line-blue: hsl(188, 100%, 14%);
     --orange: hsl(34, 100%, 66%);
-    --space-between-sections: 6rem;
-    --space-within-sections: 6rem;
+    --space-between-sections: 5rem;
+    --space-within-sections: 5rem;
     --space-between-sections-s: 4rem;
     --space-within-sections-s: 2rem; 
 }
