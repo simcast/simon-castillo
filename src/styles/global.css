@@ -444,6 +444,10 @@ lottie-player {
     max-width: 60%;
     padding-left: 2rem;
 
+    a:hover {
+        background-color: transparent;
+    }
+
     img {
         width: 100%;
     }
