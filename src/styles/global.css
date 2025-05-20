@@ -58,6 +58,7 @@ a {
 footer {
     padding: 4rem 0 4rem 0;
     background-color: rgb(0,0,0,0.3);
+    border-radius: 32px 32px 0 0;
 }
 
 figure {
@@ -771,6 +772,11 @@ lottie-player {
     
 
 @media only screen and (min-width: 992px) {
+
+    footer {
+        margin: auto;
+        max-width: 1320px;
+    }
 
     main {
         margin: auto;
