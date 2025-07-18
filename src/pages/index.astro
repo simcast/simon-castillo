@@ -24,19 +24,19 @@ import Footer from '../components/footer.astro';
 	</head>
 	<body>
 		<main>
-			<div class="home-hero">
+			<div class="home-hero animate-glow-in animation-delay-1">
 				<div class="home-hero-text">
-					<h1 class="secondary-color heading-l animate-glow-in animation-delay-1" id="home-name">Simon Castillo</h1>
-					<h2 class="primary-color heading-l animate-glow-in animation-delay-2" id="home-job-title">Product Designer</h2>
+					<h1 class="primary-color heading-l" id="home-name">Simon Castillo</h1>
+					<h2 class="heading-l" id="home-job-title">Product Designer</h2>
 				</div>
 
-				<ul class="body-xs primary-color animate-glow-slide animation-delay-3 body-l label-list" id="home-hero-labels">
+				<ul class="body-xs primary-color body-l label-list" id="home-hero-labels">
 					<li class="label">London, UK</li>
 					<!-- <li class="label">8 years of experience</li> -->
 					<li class="label">Open to new opportunities</li>
 				</ul>
 
-				<div class="home-hero-pic-container animate-glow-slide animation-delay-3">
+				<div class="home-hero-pic-container animate-glow-slide animation-delay-2">
 					<img src={profilePic.src} alt="Profile picture of Simon." class="home-hero-pic border-radius-s">
 				</div>
 			
@@ -44,12 +44,12 @@ import Footer from '../components/footer.astro';
 			<section id="about-section" class="animate-glow-slide animation-delay-3">
 				<!-- <div class="two-column" id="gap-l"> -->
 					<div class="about-text">
-						<h2 class="heading-m primary-color">Focused on function, accessibility and thoughtful craftsmanship</h2>
-						<p>Over the past 8 years, I’ve designed web products across healthcare and UK government, helping essential services to run more effectively. I aim for impactful designs that make the web more useful and human-centred.</p>
+						<h2 class="heading-m">Focused on function, accessibility and thoughtful craftsmanship</h2>
+						<p class="body-s">Over the past 8 years, I’ve designed web products across healthcare and UK government, helping essential services to run more effectively. I aim for impactful designs that make the web more useful and human-centred.</p>
 						<!-- <p class="body-l">I’m a Digital Product Designer dedicated to functional, accessible, and thoughtfully crafted design. With every project, I aim to make the web a little more useful and human-centred.</p> -->
 					</div>
 					<div id="about-skill-section">
-						<h2 class="heading-s primary-color section-heading-left">Key skills</h2>
+						<!-- <h2 class="heading-s section-heading-left">Key skills</h2> -->
 							<ul class="mini-list body-xs">
 								<li>
 									<div class="icon-list-item">
@@ -110,11 +110,11 @@ import Footer from '../components/footer.astro';
 			<section class="project-list">
 				<h2 class="heading-s primary-color section-heading-left margin-bottom-zero">Selected work and experience</h2>
 
-				<div class="project-section border-bottom">
+				<div class="project-section">
 					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">1</span> -->
-							<span class="primary-color">Accurx</span>
+							<span>Accurx</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
@@ -132,11 +132,11 @@ import Footer from '../components/footer.astro';
 					</div>
 				</div>
 
-				<div class="project-section border-bottom">
+				<div class="project-section">
 					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">2</span> -->
-							<span class="primary-color">Ministry of Justice</span>
+							<span>Ministry of Justice</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
@@ -157,11 +157,11 @@ import Footer from '../components/footer.astro';
 					</div>
 				</div>
 
-				<div class="project-section border-bottom">
+				<div class="project-section">
 					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">1</span> -->
-							<span class="primary-color">GameOn Active</span>
+							<span>GameOn Active</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
@@ -181,7 +181,7 @@ import Footer from '../components/footer.astro';
 					<div class="project-section-text">
 						<h3 class="heading-m">
 							<!-- <span class="number">3</span> -->
-							<span class="primary-color">Home Office</span>
+							<span>Home Office</span>
 						</h3>
 						<div>
 							<!-- <div class="padding-left-inset"> -->
