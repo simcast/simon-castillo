@@ -9,8 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource-variable/plus-jakarta-sans": "^5.2.5",
-    "@fontsource/barlow": "^5.1.0",
+    "@fontsource-variable/funnel-display": "^5.2.6",
+    "@fontsource-variable/space-grotesk": "^5.2.8",
+
     "astro": "^4.16.16"
   }
 }

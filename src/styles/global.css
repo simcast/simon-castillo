@@ -7,7 +7,8 @@
     --light-blue: hsl(188, 98%, 48%);
     /* --light-blue: hsl(202, 75%, 60%); */
     --line-blue: hsl(188, 100%, 14%);
-    --orange: hsl(35, 90%, 67%);
+    /* --orange: hsl(35, 90%, 67%); */
+       --orange: hsl(65, 60%, 70%);
     --background-light-1: hsla(0, 0%, 100%, 0.03);
 
      /* Radii */
@@ -20,7 +21,7 @@
     --space-between-sections-s: 4rem;
     --space-within-sections-s: 2rem;
 
-    --padding-m: 3rem;
+    --padding-m: 3.5rem;
     --spacing-s: 2rem;
     --spacing-m: 4rem;
 
@@ -35,6 +36,7 @@
 }
 
 a {
+    text-underline-offset: 3px;
     transition: color 0.15s linear, background-color 0.15s linear;
 }
 
@@ -47,7 +49,8 @@ a:hover {
 html {
     background-color: var(--dark-blue);
     color: #fff;
-    font-family: 'Plus Jakarta Sans Variable', sans-serif;
+    font-family: 'Space Grotesk Variable', sans-serif;
+    /* font-family: 'Funnel Display Variable', system-ui; */
     margin: 0;
     padding: 0;
     text-wrap: pretty;
@@ -69,9 +72,12 @@ body {
   }
 
 h1, h2, h3, h4 {
-    font-family: 'Plus Jakarta Sans Variable', sans-serif;
     font-weight: 700;
     margin: 0 0 1.5rem 0; 
+}
+
+h1 {
+    font-family: 'Funnel Display Variable', sans-serif;
 }
 
 a {
@@ -266,9 +272,9 @@ section {
 
 #home-hero-labels {
     align-self: start;
-    margin-top: 1rem;
     grid-column: 1 / span 8;
     grid-row: 2 / span 1;
+    margin-top: var(--spacing-s)
 }
 
 .home-hero-pic {
