@@ -292,6 +292,10 @@ section {
 
 }
 
+#home-name {
+    margin-bottom: 1rem;
+}
+
 #home-name, #home-job-title, #home-meta-info {
     grid-column: 1 / span 8;
 }
@@ -662,6 +666,10 @@ lottie-player {
         font-size: 1.3rem;
     }
 
+    #home-name {
+        margin-bottom: 0;
+    }
+
     .hero-img-container {
         min-height: auto;
         /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
@@ -867,6 +875,10 @@ lottie-player {
     main {
         margin: auto;
         max-width: 1320px;
+    }
+
+    #about-skill-section {
+        margin-top: 4px;
     }
 
     .caption-partial-width {
