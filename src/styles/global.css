@@ -747,10 +747,6 @@ lottie-player {
     .about-text {
         grid-column: 1 / span 12;
         /* margin-bottom: var(--space-between-sections-s); */
-
-        p {
-            /* margin-bottom: 0; */
-        }
     }
 
     .body-l {
