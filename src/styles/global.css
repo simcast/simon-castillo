@@ -677,6 +677,10 @@ lottie-player {
         /* To prevent content reflow. This reserves enough space to push content out of view while the hero image loads.*/
     }
 
+    .home-main-padding {
+        padding: 1rem;
+    }
+
     .label {
         font-size: 0.8rem;
     }
