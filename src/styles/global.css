@@ -72,7 +72,7 @@ body {
   }
 
 h1, h2, h3, h4 {
-    font-weight: 700;
+    font-weight: 600;
     margin: 0 0 1.5rem 0; 
 }
 
@@ -137,7 +137,7 @@ section {
 }
 
 #about-skill-section {
-    grid-column: 9 / span 3;
+    grid-column: 9 / span 4;
 }
 
 .about-text {
@@ -308,6 +308,10 @@ section {
     font-weight: 700;
     margin: 0 0 1rem 0;
     text-decoration: none;
+}
+
+.home-main-padding {
+    padding: 2rem 8rem;
 }
 
 
