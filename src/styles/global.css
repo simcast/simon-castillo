@@ -4,11 +4,11 @@
     --border: hsl(188, 100%, 20%);
     --dark-blue: hsl(213, 48%, 9%);
     --mid-blue: hsl(213, 48%, 14%);
-    --light-blue: hsl(188, 98%, 48%);
+    --light-blue: hsl(188, 100%, 50%);
     /* --light-blue: hsl(202, 75%, 60%); */
     --line-blue: hsl(188, 100%, 14%);
     /* --orange: hsl(35, 90%, 67%); */
-       --orange: hsl(65, 60%, 70%);
+       --orange: hsl(65, 64%, 70%);
     --background-light-1: hsla(0, 0%, 100%, 0.03);
 
      /* Radii */
@@ -21,6 +21,7 @@
     --space-between-sections-s: 4rem;
     --space-within-sections-s: 2rem;
 
+    --padding-s: 3rem;
     --padding-m: 3.5rem;
     --spacing-s: 2rem;
     --spacing-m: 4rem;
@@ -133,7 +134,7 @@ section {
     gap: 2rem;
     grid-template-columns: repeat(12, 1fr);
     margin-bottom: var(--spacing-m);
-    padding: var(--padding-m);
+    padding: var(--padding-s);
 }
 
 #about-skill-section {
@@ -252,7 +253,7 @@ section {
     grid-template-columns: repeat(12, 1fr);
     /* height: 70vh; */
     margin: 3rem auto auto auto;
-    padding: var(--padding-m);
+    padding: var(--padding-s);
 
     h1, h2 {
         margin-bottom: 0;
@@ -481,7 +482,7 @@ lottie-player {
     flex-direction: row;
     gap: var(--spacing-m);
     margin-bottom: var(--spacing-s);
-    padding: var(--padding-m);
+    padding: var(--padding-s);
 }
 
 .project-section-text {
@@ -553,7 +554,7 @@ lottie-player {
 
 .section-heading-left {
     /* border-bottom: 1px dashed var(--line-blue); */
-    padding: 0 0 0.5rem var(--padding-m);
+    padding: 0 0 0.5rem var(--padding-s);
     margin: 0 0 1rem 0;
 }
 
