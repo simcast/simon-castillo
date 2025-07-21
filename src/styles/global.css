@@ -311,6 +311,10 @@ section {
     text-decoration: none;
 }
 
+#home-job-title {
+    font-family: 'Funnel Display Variable', sans-serif;
+}
+
 .home-main-padding {
     padding: 2rem 8rem;
 }
