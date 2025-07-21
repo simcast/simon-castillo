@@ -10,6 +10,7 @@
     /* --orange: hsl(35, 90%, 67%); */
        --orange: hsl(65, 64%, 70%);
     --background-light-1: hsla(0, 0%, 100%, 0.03);
+    --background-light-2: hsla(0, 0%, 100%, 0.06);    
 
      /* Radii */
       --border-radius-s: 0.5rem;
@@ -22,7 +23,7 @@
     --space-within-sections-s: 2rem;
 
     --padding-s: 3rem;
-    --padding-m: 3.5rem;
+    --padding-m: 3.25rem;
     --spacing-s: 2rem;
     --spacing-m: 4rem;
 
@@ -127,7 +128,7 @@ section {
 
 
 #about-section {
-    background-color: hsla(0, 0%, 100%, 0.03);
+    background-color: var(--background-light-1);   
     border-radius: 0 0 var(--border-radius-m) var(--border-radius-m);
     border-top: 1px dashed var(--border);
     display: grid;
@@ -245,7 +246,7 @@ section {
 
 .home-hero {
     align-items: center;
-    background-color: hsla(0, 0%, 100%, 0.06);
+    background-color: var(--background-light-2);
     border-radius: var(--border-radius-m) var(--border-radius-m) 0 0;
     display: grid;
     column-gap: var(--spacing-mobile-m);
