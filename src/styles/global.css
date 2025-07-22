@@ -1,8 +1,8 @@
 :root {
 
     /* Colours */
-    --border: hsl(188, 100%, 20%);
-    --dark-blue: hsl(213, 48%, 9%);
+    --border: hsl(188, 100%, 25%);
+    --dark-blue: hsl(213, 48%, 7%);
     --mid-blue: hsl(213, 48%, 14%);
     --light-blue: hsl(188, 100%, 50%);
     /* --light-blue: hsl(202, 75%, 60%); */
@@ -945,11 +945,11 @@ img.in-view {
 }
 
 .animation-delay-2 {
-    animation-delay: 0.7s;
+    animation-delay: 0.5s;
 }
 
 .animation-delay-3 {
-    animation-delay: 1.1s;
+    animation-delay: 0.7s;
 }
 
 .animation-delay-icon-2 {
