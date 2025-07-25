@@ -606,6 +606,14 @@ lottie-player {
 /* Media queries */
 
 @media only screen and (max-width: 479px) {
+    blockquote {
+        margin: 0 0 0 0;
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
     main {
         margin: auto;        
         max-width: 100%;
@@ -627,19 +635,29 @@ lottie-player {
         display: block;
     }
 
+    p, li {
+        font-size: 0.9rem;
+    }
+
     p {
         margin: 0 0 var(--spacing-mobile-m) 0; 
     }
 
     #about-section {
         border-radius: 0 0 var(--border-radius-mobile-m) var(--border-radius-mobile-m);
-        padding: var(--spacing-mobile-s);
+        padding: 2rem var(--padding-mobile) var(--padding-mobile) var(--padding-mobile);
+        p {
+            margin-bottom: 0;
+        }
     }
 
     .about-text {
         margin-bottom: var(--spacing-mobile-m);
     }
 
+    .body-xs {
+        font-size: 0.9rem;
+    }
 
     .body-l {
         font-size: 1.25rem;
@@ -718,11 +736,12 @@ lottie-player {
     .project-section {
         border-radius: var(--border-radius-mobile-m);
         padding: var(--spacing-mobile-s);
+        gap: var(--spacing-mobile-m)
     }
 
-     .project-section-text > p:last-child {
+     /* .project-section-text > p:last-child {
         margin-bottom: 0;
-    }
+    } */
 
     .section-heading-left {
         padding-left: 1rem;
@@ -736,9 +755,6 @@ lottie-player {
 
 @media only screen and (max-width: 991px) {
 
-    blockquote {
-        margin: 0 0 4rem 0;
-    }
 
     body {
         font-size: 1rem;
