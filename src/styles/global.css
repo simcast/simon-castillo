@@ -1017,3 +1017,12 @@ img.in-view {
     0% {transform: translate(0, 1rem)}
     100% {transform: translate(0)}
 }
+
+.green-dot-animate {
+  animation: green-dot-fade 1.8s ease-in-out infinite;
+}
+@keyframes green-dot-fade {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
