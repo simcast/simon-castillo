@@ -931,20 +931,25 @@ img.in-view {
 
 /* CSS animations */
 
-.animate-glow-in {
-    animation-name: glow-in;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    opacity: 0;
+.animate-glow-in, .animate-glow-slide {
+  opacity: 1;
 }
-
-.animate-glow-slide {
-    animation-name: glow-in, slide;
-    animation-duration: 0.6s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    opacity: 0;
+body.js-enabled .animate-glow-in, body.js-enabled .animate-glow-slide {
+  opacity: 0;
+}
+body.js-enabled.animate-start .animate-glow-in {
+  animation-name: glow-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  opacity: 0;
+}
+body.js-enabled.animate-start .animate-glow-slide {
+  animation-name: glow-in, slide;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
 }
 
 .animate-gradient-cycle {
@@ -957,15 +962,15 @@ img.in-view {
 }
 
 .animation-delay-1 {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
 }
 
 .animation-delay-2 {
-    animation-delay: 0.5s;
+    animation-delay: 0.4s;
 }
 
 .animation-delay-3 {
-    animation-delay: 0.7s;
+    animation-delay: 0.6s;
 }
 
 .animation-delay-icon-2 {

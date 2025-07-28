@@ -29,4 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Add the observer to each of those elements
 	allAnimatedElements.forEach((element) => observer.observe(element));
 
+});
+
+document.body.classList.add('js-enabled');
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('animate-start');
 }); 
