@@ -931,20 +931,20 @@ img.in-view {
 
 /* CSS animations */
 
+
 .animate-glow-in, .animate-glow-slide {
-  opacity: 1;
-}
-body.js-enabled .animate-glow-in, body.js-enabled .animate-glow-slide {
   opacity: 0;
 }
-body.js-enabled.animate-start .animate-glow-in {
+
+.animate-start .animate-glow-in {
   animation-name: glow-in;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
   opacity: 0;
 }
-body.js-enabled.animate-start .animate-glow-slide {
+
+.animate-start .animate-glow-slide {
   animation-name: glow-in, slide;
   animation-duration: 0.6s;
   animation-fill-mode: forwards;
