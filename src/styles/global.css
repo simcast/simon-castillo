@@ -224,6 +224,10 @@ section {
 
 }
 
+.footer-text > .inline-list {
+    margin-top: 0;
+}
+
 /* #gap-l {
     gap: 8rem;
 } */
@@ -932,7 +936,7 @@ img.in-view {
 /* CSS animations */
 
 
-.animate-glow-in, .animate-glow-slide {
+.animate-glow-in, .js .animate-glow-slide {
   opacity: 0;
 }
 
