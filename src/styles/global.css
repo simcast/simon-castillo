@@ -350,6 +350,10 @@ section {
     padding: 0.5rem 0;
 }
 
+.img-inline-section {
+    display: flex;
+    gap: 4rem;
+}
 
 .inline-list {
     margin-top: 1rem;
