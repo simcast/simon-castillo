@@ -63,12 +63,6 @@ html {
 
   }
 
-html {
-  font-family: system-ui, sans-serif;
-  background: var(--dark-blue);
-  color: #fff;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 body {
   visibility: hidden;
