@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Fallback to remove no-js class and add js class to the html element. This lets non-JS users see all the content on the page, but allows the animation for JS uers.
-// document.documentElement.classList.remove('no-js');
-// document.documentElement.classList.add('js');
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
 
 // document.body.classList.add('js-enabled');
 document.addEventListener('DOMContentLoaded', function() {

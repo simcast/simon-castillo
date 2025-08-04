@@ -63,6 +63,25 @@ html {
 
   }
 
+html {
+  font-family: system-ui, sans-serif;
+  background: var(--dark-blue);
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.js body {
+  visibility: visible;
+}
+
 blockquote {
     font-size: 2rem;
     /* font-weight: 700; */
