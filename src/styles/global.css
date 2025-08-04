@@ -106,7 +106,7 @@ a {
 footer {
     padding: var(--padding-m) 0;
     background-color: rgb(0,0,0,0.3);
-    border-radius: 16px 16px 0 0;
+    border-radius: var(--border-radius-m) var(--border-radius-m) 0 0;
 }
 
 figure {
@@ -926,7 +926,7 @@ lottie-player {
 
     footer {
         margin: auto;
-        max-width: 1320px;
+        /* max-width: 1320px; */
     }
 
     main {
