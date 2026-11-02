@@ -10,7 +10,7 @@
     /* --yellow: hsl(35, 90%, 67%); */
        --yellow: hsl(65, 72%, 70%);
     --background-light-1: hsla(0, 0%, 100%, 0.03);
-    --background-light-2: hsla(0, 0%, 100%, 0.06);    
+    --background-light-2: hsla(0, 0%, 100%, 0.05);    
 
      /* Radii */
       --border-radius-s: 0.5rem;
@@ -22,8 +22,8 @@
     --space-between-sections-s: 4rem;
     --space-within-sections-s: 2rem;
 
-    --padding-s: 3rem;
-    --padding-m: 3.25rem;
+    --padding-s: 2.25rem;
+    --padding-m: 3rem;
     --spacing-s: 2rem;
     --spacing-m: 4rem;
 
@@ -147,7 +147,6 @@ section {
 #about-section {
     background-color: var(--background-light-1);   
     border-radius: 0 0 var(--border-radius-m) var(--border-radius-m);
-    border-top: 1px dashed var(--border);
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(12, 1fr);
@@ -267,7 +266,8 @@ section {
 
 .home-hero {
     align-items: center;
-    background-color: var(--background-light-2);
+    background-color: var(--background-light-1);
+    border-bottom: 1px dashed var(--line-blue);
     border-radius: var(--border-radius-m) var(--border-radius-m) 0 0;
     display: grid;
     column-gap: var(--spacing-mobile-m);
@@ -344,7 +344,7 @@ section {
 
 .icon-container{
     align-items: center;
-    background-color: var(--dark-blue);
+    background-color: var(--background-light-2);
     border-radius: 50%;
     display: flex;
     height: 3rem;
@@ -397,7 +397,7 @@ section {
 }
 
 .label {
-    background-color: var(--dark-blue);
+    background-color: var(--background-light-2);
     border-radius: 24px;
     letter-spacing: 0.04rem;
     /* font-weight:500; */
