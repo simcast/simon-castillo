@@ -83,7 +83,7 @@ blockquote {
 }
 
 body {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 1.7;
     margin: 0;
@@ -303,8 +303,6 @@ section {
 }
 
 .home-hero-pic-container {
-
-    border-radius: 16px;
     font-size: 0;
     grid-column: 9 / span 3;
     grid-row: 1 / span 2;
