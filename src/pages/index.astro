@@ -10,6 +10,8 @@ import mojCover from '../images/home/moj-cover.jpg';
 import goCover from '../images/home/go-cover.jpg';
 
 import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import ThemeBoot from '../components/ThemeBoot.astro';
 ---
 
 <html lang="en" class="no-js">
@@ -19,10 +21,12 @@ import Footer from '../components/footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Simon Castillo</title>
+		<ThemeBoot />
 		<script src="../scripts/scripts.js"></script>
 	</head>
 	<body>
 		<main class="home-main-padding">
+			<Header />
 			<div class="home-hero">
 				<div class="home-hero-text animate-glow-slide animation-delay-1">
 					<h1 class="primary-color heading-l" id="home-name">Simon Castillo</h1>

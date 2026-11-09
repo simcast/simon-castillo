@@ -15,6 +15,8 @@ import resultBottom from '../images/disclosure-checker/dc-multi-result-bottom.pn
 import axCover from '../images/home/ax-cover.jpg';
 import mojCover from '../images/home/moj-cover.jpg';
 import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import ThemeBoot from '../components/ThemeBoot.astro';
 
 ---
 
@@ -25,15 +27,12 @@ import Footer from '../components/footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Simon Castillo</title>
+        <ThemeBoot />
         <script src="../scripts/scripts.js"></script>
 	</head>
 	<body>
         <main>
-            <header>
-                <nav class="top-nav">
-                    <a href="/" class="home-link">Simon Castillo</a>
-                </nav>
-            </header>
+            <Header showHomeLink />
             
             <div class="case-study-hero animate-glow-in animation-delay-1">
                 <h1 class="heading-l ">Disclosure Checker</h1>
@@ -46,7 +45,7 @@ import Footer from '../components/footer.astro';
                 <div class="centred-partial-width">
                     <div class="quick-summary animate-glow-in animation-delay-2">
                         <h2 class="heading-s primary-color section-heading">Quick summary</h2>
-                        <p>The challenge here was to create a digital tool to help people understand when they should tell others about their cautions or criminal convictions. I was on this project from designing the MVP through to public beta.
+                        <p>A digital tool to help people know when they should tell others about their criminal convictions or cautions. I was on this project from designing the MVP through to public beta.
                         </p>
                         <h3 class="heading-s primary-color">My key outcomes:</h3>
                         <ol>

@@ -11,6 +11,8 @@ import programmeDetail from '../images/intervention-finder/fi-programme-detail.p
 import axCover from '../images/home/ax-cover.jpg';
 import mojCover from '../images/home/moj-cover.jpg';
 import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import ThemeBoot from '../components/ThemeBoot.astro';
 
 
 ---
@@ -22,15 +24,12 @@ import Footer from '../components/footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Simon Castillo - Finding rehabilitative programmes</title>
+        <ThemeBoot />
         <script src="../scripts/scripts.js"></script>
 	</head>
 	<body>
         <main>
-            <header>
-                <nav class="top-nav">
-                    <a href="/" class="home-link">Simon Castillo</a>
-                </nav>
-            </header>
+            <Header showHomeLink />
             
             <div class="case-study-hero animate-glow-in animation-delay-1">
                 <h1 class="heading-l">Finding rehabilitative programmes</h1>
@@ -43,7 +42,7 @@ import Footer from '../components/footer.astro';
                 <div class="centred-partial-width">
                     <div class="quick-summary animate-glow-in animation-delay-2">
                         <h2 class="heading-s primary-color section-heading">Quick summary</h2>
-                        <p>The challenge here was to help probation practitioners find the right rehabilitation activities for a person in prison. For example, courses to address issues like substance abuse or managing relationships. I worked with a Service Designer to lead the team through a short design sprint and start the design phase.
+                        <p>Helping probation practitioners find the right rehabilitation activities for a person in prison. For example, courses to help with substance abuse or managing relationships. I worked with a Service Designer to lead the team through a design sprint.
                         </p>
                         <h3 class="heading-s primary-color">My key outcomes:</h3>
                             <ol>

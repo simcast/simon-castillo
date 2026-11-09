@@ -1,9 +1,15 @@
 ---
+const { showHomeLink = false } = Astro.props;
 ---
 <header class="site-header">
-  <div class="theme-toggle" id="theme-toggle">
-    <button type="button" class="theme-btn" data-theme="light" aria-pressed="false">Light</button>
-    <button type="button" class="theme-btn" data-theme="dark" aria-pressed="false">Dark</button>
-  </div>
+	{showHomeLink && (
+		<nav class="top-nav">
+			<a href="/" class="home-link">Simon Castillo</a>
+		</nav>
+	)}
+	<div class="theme-toggle" id="theme-toggle" role="group" aria-label="Color theme">
+		<button type="button" class="theme-btn" data-theme="light" aria-pressed="false">Light</button>
+		<button type="button" class="theme-btn" data-theme="dark" aria-pressed="true">Dark</button>
+	</div>
 </header>
-<script type="module" src="/scripts/theme-toggle.js"></script> 
+<script is:inline src="/scripts/theme-toggle.js"></script>

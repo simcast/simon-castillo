@@ -8,6 +8,8 @@ import eventDetails from '../images/game-on/go-event-details.png';
 import yourEvents from '../images/game-on/go-your-events.png';
 
 import Footer from '../components/footer.astro';
+import Header from '../components/header.astro';
+import ThemeBoot from '../components/ThemeBoot.astro';
 ---
 
 <html lang="en">
@@ -17,16 +19,13 @@ import Footer from '../components/footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Simon Castillo</title>
+        <ThemeBoot />
         <script src="../scripts/scripts.js"></script>
         <script src="https://cdn.lottielab.com/s/lottie-player@1.x/player-web.min.js"></script>
 	</head>
 	<body>
         <main>
-            <header>
-                <nav class="top-nav">
-                    <a href="/" class="home-link">Simon Castillo</a>
-                </nav>
-            </header>
+            <Header showHomeLink />
             
             <div class="case-study-hero animate-glow-in animation-delay-1">
                 <h1 class="heading-l ">UI Showcase</h1>

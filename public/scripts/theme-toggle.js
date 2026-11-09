@@ -1,39 +1,30 @@
-// Theme toggle logic
 function setTheme(theme) {
-  if (theme === 'light') {
-    document.body.classList.add('light');
-  } else {
-    document.body.classList.remove('light');
-  }
-  localStorage.setItem('theme', theme);
-  // Update toggle UI
-  const btns = document.querySelectorAll('.theme-btn');
-  btns.forEach(btn => {
-    btn.setAttribute('aria-pressed', btn.dataset.theme === theme ? 'true' : 'false');
-  });
-}
-
-function getSavedTheme() {
-  return localStorage.getItem('theme') || 'dark';
+	const next = theme === 'light' ? 'light' : 'dark';
+	if (next === 'light') {
+		document.documentElement.setAttribute('data-theme', 'light');
+	} else {
+		document.documentElement.removeAttribute('data-theme');
+	}
+	localStorage.setItem('theme', next);
+	document.querySelectorAll('.theme-btn').forEach((btn) => {
+		btn.setAttribute('aria-pressed', btn.dataset.theme === next ? 'true' : 'false');
+	});
 }
 
 function setupThemeToggle() {
-  const toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
-  toggle.addEventListener('click', e => {
-    if (e.target.classList.contains('theme-btn')) {
-      setTheme(e.target.dataset.theme);
-    }
-  });
-  setTheme(getSavedTheme());
+	const toggle = document.getElementById('theme-toggle');
+	if (!toggle || toggle.dataset.ready === 'true') return;
+	toggle.dataset.ready = 'true';
+	toggle.addEventListener('click', (event) => {
+		const btn = event.target.closest('.theme-btn');
+		if (!btn) return;
+		setTheme(btn.dataset.theme);
+	});
+	setTheme(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
 }
 
-document.addEventListener('DOMContentLoaded', setupThemeToggle);
-
-// Instant theme on page load (for FOUC prevention)
-(function instantTheme() {
-  const theme = localStorage.getItem('theme');
-  if (theme === 'light') {
-    document.body.classList.add('light');
-  }
-})(); 
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', setupThemeToggle);
+} else {
+	setupThemeToggle();
+}
